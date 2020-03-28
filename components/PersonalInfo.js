@@ -4,50 +4,22 @@ import RestartingTypist from './RestartingTypist'
 function PersonalInfo() {
     const titles = ["developer", "software engineer", "student", "coffee fanatic"];
     return (
-        <div>
-            <p className="description">
+        <span className="inline-block">
+            <p className="text-2xl font-thin -mb-">
                 Hi, I'm
             </p>
 
-            <h1 className="title">
+            <h1 className="text-4xl font-extrabold">
                 Nicholas Osaka.
             </h1>
 
-            <span className="typing">
+            <div className="text-2xl flex flex-row font-thin">
                 <span>I'm a</span>
-                <span className="changing-word">
+                <span className="ml-1">
                     <RestartingTypist style={{'color': '#FFFF00'}} words={titles} ></RestartingTypist>
                 </span>
-            </span>            
-
-            <style jsx>{`
-
-            .typing {
-                font-size: 2rem;
-                display: flex;
-                flex-direction: row;
-            }
-
-            .changing-word {
-                margin-left: 0.5rem;
-            }
-    
-            .title {
-                font-size: 4rem;
-            }
-    
-            .title,
-            .description {
-                text-align: left;
-                margin-top: 0rem;
-                margin-bottom: 0.2rem;
-            }
-    
-            .description {
-                font-size: 2rem;
-            }
-            `}</style>
-        </div>
+            </div>            
+        </span>
     )
 }
 
