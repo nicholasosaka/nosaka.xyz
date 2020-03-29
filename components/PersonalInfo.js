@@ -2,10 +2,10 @@ import React from 'react'
 import RestartingTypist from './RestartingTypist'
 
 function PersonalInfo() {
-    const titles = ["developer", "software engineer", "student", "coffee fanatic"];
+    const titles = ["developer", "student", "motion designer", "software engineer", "coffee fanatic"];
     return (
-        <span className="inline-block">
-            <p className="text-2xl sm:text-3xl font-thin -mb-">
+        <span className="inline-block subpixel-antialiased">
+            <p className="text-2xl sm:text-3xl font-thin -mb-3">
                 Hi, I'm
             </p>
 

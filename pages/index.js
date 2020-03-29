@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import PersonalInfo from '../components/PersonalInfo'
+import Nav from '../components/Nav'
 
 const Home = () => (
   <div>
@@ -8,14 +9,19 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main>
-      <div className="w-screen h-screen flex flex-col md:flex-row items-center justify-evenly">
-        <span className="inline-block">
-          <PersonalInfo/>
-        </span>
-        <span className="inline-block">
-          <img src='/static/_profile_picture_50.png' className="rounded-full shadow-most"/>
-        </span>
+    <main className="container subpixel-antialiased">
+      <div className="mx-auto mt-1 absolute top-0">
+        <Nav/>
+      </div>
+      <div className="mx-auto w-screen h-screen flex flex-col items-center justify-evenly">
+        <div className="w-screen flex flex-col md:flex-row items-center justify-evenly">
+          <span className="inline-block">
+            <PersonalInfo/>
+          </span>
+          <span className="inline-block mt-16 sm:my-0">
+            <img src='/static/_profile_picture_50.png' className="rounded-full shadow-4xl border-green-800 border-4"/>
+          </span>
+        </div>
       </div>
     </main>
   </div>
