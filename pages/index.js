@@ -14,7 +14,7 @@ const Home = () => (
           <PersonalInfo/>
         </span>
         <span className="inline-block">
-          <img src='/static/_profile_picture_50.png' className="rounded-full shadow-most"></img>
+          <img src='/static/_profile_picture_50.png' className="rounded-full shadow-most"/>
         </span>
       </div>
     </main>
