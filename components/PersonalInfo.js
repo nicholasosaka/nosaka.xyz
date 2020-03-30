@@ -9,14 +9,14 @@ function PersonalInfo() {
                 Hi, I'm
             </p>
 
-            <h1 className="text-4xl sm:text-5xl font-extrabold">
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-green-900">
                 Nicholas Osaka.
             </h1>
 
             <div className="text-2xl sm:text-3xl flex flex-row font-thin">
                 <span>I'm a</span>
                 <span className="ml-2">
-                    <RestartingTypist style={{'color': '#FFFF00'}} words={titles} ></RestartingTypist>
+                    <RestartingTypist words={titles} ></RestartingTypist>
                 </span>
             </div>            
         </span>
