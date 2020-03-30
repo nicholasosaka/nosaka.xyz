@@ -33,7 +33,7 @@ const LinkedIn = () => {
     return (
         <a href="https://linkedin.com/in/nosaka0" className="flex flex-row mx-auto justify-center items-center">
             <IoLogoLinkedin/>
-            <p className="text-sm font-thin px-1">nosaka@uncc.edu</p>
+            <p className="text-sm font-thin px-1">nosaka0</p>
         </a>
     )
 }
