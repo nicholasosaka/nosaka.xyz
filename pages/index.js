@@ -19,7 +19,7 @@ const Home = () => (
             <PersonalInfo/>
           </span>
           <span className="inline-block mt-16 sm:my-0">
-            <img src='/static/_profile_picture_50.png' className="rounded-full shadow-4xl border-green-900 border-4"/>
+            <img src='/static/_profile_picture_50.png' className="rounded-full shadow-4xl border-green-900 border-8"/>
           </span>
         </div>
       </div>

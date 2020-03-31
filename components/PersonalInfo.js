@@ -9,7 +9,7 @@ function PersonalInfo() {
                 Hi, I'm
             </p>
 
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-green-900">
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-green-900 text-shadow-xl">
                 Nicholas Osaka.
             </h1>
 
