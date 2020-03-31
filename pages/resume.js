@@ -49,7 +49,7 @@ const Resume = () => (
         <div className="mx-auto mt-1 absolute top-0">
             <Nav/>
         </div>
-        <div className="mt-8 w-screen mx-auto pt-32 sm:pt-8 pb-4 sm:pb-8">
+        <div className="mt-4 w-screen mx-auto pt-24 sm:pt-8 pb-4 sm:pb-8">
             <h1 className="text-3xl font-extrabold text-center">Nicholas Osaka</h1>
             <div className="w-1/3 mx-auto flex flex-col sm:flex-row justify-evenly">
                 <Email/>
