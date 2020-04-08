@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Typist from 'react-typist';
-import uuid from 'uuid'
+import { v4 as uuid } from 'uuid'
 
-export default class Typing extends Component {
+interface wordProps {
+  words: string[];
+}
+export default class Typing extends Component<wordProps> {
   static propTypes = {
     words: PropTypes.array.isRequired
   }
