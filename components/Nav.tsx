@@ -11,19 +11,19 @@ function Nav(){
                     </a>
                 </Link>
             </div>
-            <ul>
+            <ul className="flex flex-row space-x-2">
                 <li>
-                    <Link href='about'>
+                    <Link href='/about'>
                         <a className="transition duration-300 ease-out hover:text-green-900 hover:underline">About</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href='blog'>
+                    <Link href='/blog'>
                         <a className="transition duration-300 ease-out hover:text-green-900 hover:underline">Blog</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href='resume'>
+                    <Link href='/resume'>
                         <a className="transition duration-300 ease-out hover:text-green-900 hover:underline">Resume</a>
                     </Link>
                 </li>
