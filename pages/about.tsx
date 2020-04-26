@@ -8,9 +8,7 @@ const About = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main className="container subpixel-antialiased">
-      <div className="mx-auto mt-1 absolute top-0">
-        <Nav/>
-      </div>
+      <Nav/>
       <div className="mx-auto my-10 w-screen h-screen flex flex-col md:flex-row items-center justify-evenly">
           {/* About page content here */}
           <img className="w-1/2 md:w-1/4 md:h-1/4 rounded-lg shadow-2xl flex-shrink-0 m-10" src="/static/full_length_profile_50.jpg"></img>

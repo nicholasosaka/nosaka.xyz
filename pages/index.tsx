@@ -10,9 +10,7 @@ const Home = () => (
     </Head>
 
     <main className="container subpixel-antialiased">
-      <div className="mx-auto mt-1 absolute top-0">
-        <Nav/>
-      </div>
+      <Nav/>
       <div className="mx-auto w-screen h-screen flex flex-col items-center justify-evenly">
         <div className="w-screen flex flex-col md:flex-row items-center justify-evenly">
           <span className="inline-block">
