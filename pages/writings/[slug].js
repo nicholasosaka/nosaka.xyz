@@ -11,9 +11,8 @@ import ErrorPage from 'next/error'
 
 const Post = (props) => {
   const router = useRouter()
-  if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />
-  }
+  console.log(`props: ${props}`)
+  console.log(`props.slug: ${props?.slug}`)
   const {
     title = "Untitled Post",
     name = "Authorless Post",
@@ -22,6 +21,10 @@ const Post = (props) => {
     body = [],
     date,
   } = props
+
+  if (!router.isFallback && !props?.slug) {
+    return <ErrorPage statusCode={404} />
+  }
 
   return (
     <>
@@ -88,39 +91,42 @@ const groqQuery = groq`*[_type == "post" && slug.current == $slug][0]{
   "body": body
 }`
 
-// Post.getInitialProps = async function(context) {
-//   const { slug = "" } = context.query
-//   return await client.fetch(groqQuery, { slug })
+Post.getInitialProps = async function(context) {
+  const { slug = "" } = context.query
+  return await client.fetch(groqQuery, { slug })
+}
+
+// async function getAllPostsSlugs(){
+//   const allPosts = await client.fetch(groq`
+//   *[_type == "post" && publishedAt < now()]{slug} | order(publishedAt desc)
+//   `)
+//   return allPosts
 // }
 
-async function getAllPostsSlugs(){
-  const allPosts = await client.fetch(groq`
-  *[_type == "post" && publishedAt < now()]{slug} | order(publishedAt desc)
-  `)
-  return allPosts
-}
+// export async function getStaticProps({params}){
+//   const slug = params.slug
+//   console.log(`getStaticProps slug: ${slug}`)
 
-export async function getStaticProps({params}){
-  const { slug = "" } = params.slug
-  const postData = await client.fetch(groqQuery, { slug })
-  return {
-    props : {
-      post: postData
-    }
-  }
-}
+//   const postData = await client.fetch(groqQuery, { slug })
+//   return {
+//     props : {
+//       post: postData
+//     }
+//   }
+// }
 
-export async function getStaticPaths() {
-  const allSlugs = await getAllPostsSlugs()
-  return {
-    paths:
-      allSlugs?.map(post => ({
-        params: {
-          slug: post.slug.current,
-        },
-      })) || [],
-    fallback: true,
-  }
-}
+// export async function getStaticPaths() {
+//   const allSlugs = await getAllPostsSlugs()
+//   console.log(`paths: ${allSlugs.map(p => p.slug.current)}`)
+//   return {
+//     paths:
+//       allSlugs?.map(post => ({
+//         params: {
+//           slug: post.slug.current,
+//         },
+//       })) || [],
+//     fallback: true,
+//   }
+// }
 
 export default Post

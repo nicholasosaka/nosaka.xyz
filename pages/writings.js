@@ -33,6 +33,8 @@ function Blog(props) {
     posts = []
   } = props
 
+  posts.map(p => console.log(p.slug))
+
   return (
     <div>
       <Head>
@@ -53,19 +55,20 @@ function Blog(props) {
   );
 }
 
-// Blog.getInitialProps = async () => ({
-//   posts: await client.fetch(groq`
-//     *[_type == "post" && publishedAt < now()] | order(publishedAt desc)
-//   `)
-// })
-
-export async function getStaticProps() {
-  const allPosts = await client.fetch(groq`
-  *[_type == "post" && publishedAt < now()] | order(publishedAt desc)
+Blog.getInitialProps = async () => ({
+  posts: await client.fetch(groq`
+    *[_type == "post" && publishedAt < now()] | order(publishedAt desc)
   `)
-  return {
-    props: { allPosts }
-  }
-}
+})
+
+// export async function getStaticProps() {
+//   const allPosts = await client.fetch(groq`
+//   *[_type == "post" && publishedAt < now()] | order(publishedAt desc)
+//   `)
+//   console.log(`writings staticprops: ${allPosts}`)
+//   return {
+//     props: { allPosts }
+//   }
+// }
 
 export default Blog;
