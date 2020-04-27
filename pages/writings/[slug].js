@@ -100,7 +100,7 @@ async function getAllPostsSlugs(){
   return allPosts
 }
 
-export async function getStaticProps(params){
+export async function getStaticProps({params}){
   const { slug = "" } = params.slug
   const postData = await client.fetch(groqQuery, { slug })
   return {
@@ -114,9 +114,9 @@ export async function getStaticPaths() {
   const allSlugs = await getAllPostsSlugs()
   return {
     paths:
-      allSlugs?.map(slug => ({
+      allSlugs?.map(post => ({
         params: {
-          slug: slug.current,
+          slug: post.slug.current,
         },
       })) || [],
     fallback: true,
