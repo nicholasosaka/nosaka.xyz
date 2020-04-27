@@ -88,9 +88,39 @@ const groqQuery = groq`*[_type == "post" && slug.current == $slug][0]{
   "body": body
 }`
 
-Post.getInitialProps = async function(context) {
-  const { slug = "" } = context.query
-  return await client.fetch(groqQuery, { slug })
+// Post.getInitialProps = async function(context) {
+//   const { slug = "" } = context.query
+//   return await client.fetch(groqQuery, { slug })
+// }
+
+async function getAllPostsSlugs(){
+  const allPosts = await client.fetch(groq`
+  *[_type == "post" && publishedAt < now()]{slug} | order(publishedAt desc)
+  `)
+  return allPosts
+}
+
+export async function getStaticProps(params){
+  const { slug = "" } = params.slug
+  const postData = await client.fetch(groqQuery, { slug })
+  return {
+    props : {
+      post: postData
+    }
+  }
+}
+
+export async function getStaticPaths() {
+  const allSlugs = await getAllPostsSlugs()
+  return {
+    paths:
+      allSlugs?.map(slug => ({
+        params: {
+          slug: slug.current,
+        },
+      })) || [],
+    fallback: true,
+  }
 }
 
 export default Post
