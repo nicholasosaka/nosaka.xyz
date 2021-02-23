@@ -29,7 +29,7 @@ export default function PostLayout(props) {
                     <p className="ml-1.5 inline">⋅</p>
                     <p className="ml-1.5 inline font-light">{props.time} minute read</p>
                 </div>
-                <article className="prose max-w-none mt-10">
+                <article className="prose max-w-none pt-10">
                     {mdparsed}
                 </article>
             </div>
