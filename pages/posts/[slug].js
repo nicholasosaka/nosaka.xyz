@@ -1,9 +1,14 @@
 import { getAllPosts, getPostBySlug } from '../../api/index'
+import PostLayout from '../../layouts/post'
+import Header from '../../components/Header'
 
 export default function BlogPost(props) {
     return (
         <div>
-            {props.title}
+            <Header/>
+            <div className="mt-8 xl:mt-20 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
+                <PostLayout title={props.title} date={props.date} time={props.time} content={props.content}/>
+            </div>
         </div>
     )
 }
