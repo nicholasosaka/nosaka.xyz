@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import BlogLink from '../components/BlogLink'
+import BlogLink from './BlogLink'
 import unified from 'unified'
 import parse from 'remark-parse'
 import remark2react from 'remark-react'
-import Date from '../components/Date'
+import Date from './Date'
 
 
 export default function PostLayout(props) {
@@ -18,7 +18,7 @@ export default function PostLayout(props) {
                 .processSync(props.content).result
 
     return (
-        <div>
+        <>
             <Head>
                 <title>{props.title}</title>
             </Head>
@@ -33,6 +33,6 @@ export default function PostLayout(props) {
                     {mdparsed}
                 </article>
             </div>
-        </div>
+        </>
     )
 }

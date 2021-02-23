@@ -1,5 +1,5 @@
 import { getAllPosts, getPostBySlug } from '../../api/index'
-import PostLayout from '../../layouts/post'
+import PostLayout from '../../components/post'
 import Header from '../../components/Header'
 
 export default function BlogPost(props) {
