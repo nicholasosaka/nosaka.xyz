@@ -1,7 +1,7 @@
 import Header from '../components/Header'
 import Head from 'next/head'
 import Link from 'next/link'
-import {Education, Skills} from '../components/Resume'
+import {Education, Skills, Work, Research, Honors} from '../components/Resume'
 import {IconLink} from '../components/IconLink'
 import {SectionDivider} from '../components/SectionDivider'
 
@@ -55,6 +55,77 @@ export default function Resume() {
                         }
                     }/>
                 </div>
+
+                {/* Work Experience */}
+                <SectionDivider svg="/svgs/briefcase.svg" title="Work Experience"/>
+                <div className="lg:w-11/12 md:mx-auto">
+                    <Work
+                        title="Teaching Assistant"
+                        employer="UNC Charlotte Department of Computer Science"
+                        location="Charlotte, NC"
+                        date="Jan 2019 — Present"
+                        info={[
+                            "Assists with Software Engineering course of over 80 students, facilitating discussions on course-related content between students.",
+                            "Design demonstrative code and interactive learning elements for students to understand Software Engineering.",
+                            "Led weekly lab instruction for 40 students in order to facilitate active learning for the department's CS1 course.",
+                        ]}
+                    />
+                    <Work
+                        title="Motion Graphic Designer"
+                        employer="The Littlefield Company"
+                        location="Charlotte, NC"
+                        date="Apr 2018 — May 2020"
+                        info={[
+                            "Designed motion graphic content for projects requiring displays of complex data.",
+                            "Translated clients quantitative needs into creative goals for projects.",
+                            "Interacted with clients to deliver final design under anticipated deadlines.",
+                            "Designed project asset organizational scheme for use in all company projects with motions graphics."
+                        ]}
+                    />
+
+                </div>
+
+                {/* Research */}
+                <SectionDivider svg="/svgs/beaker.svg" title="Research"/>
+                <div className="lg:w-11/12 md:mx-auto">
+                    <Research
+                        title="NSF REU Research Project — Community Oversight for Privacy and Security"
+                        employer="UNC Charlotte, CO-oPS Project — Dr. Heather Lipford"
+                        location="Charlotte, NC"
+                        date="May 2020 — Aug 2020"
+                        info={[
+                            "Assists with Software Engineering course of over 80 students, facilitating discussions on course-related content between students.",
+                            "Design demonstrative code and interactive learning elements for students to understand Software Engineering.",
+                            "Led weekly lab instruction for 40 students in order to facilitate active learning for the department's CS1 course.",
+                        ]}
+                    />
+                    <Research
+                        title="Augmented Reality and Machine Learning for Medical Use — Undergraduate Research"
+                        employer="UNC Charlotte, Autonomous Intelligent Wireless Networked Systems Laboratory — Dr. Pu Wang"
+                        location="Charlotte, NC"
+                        date="Apr 2018 — May 2020"
+                        info={[
+                            "Designed system for use in critical professions such as the medical industry.",
+                            "Utilized EPSON MOVERIO smart glasses in conjunction with Tensorflow Lite and other related technologies for user-inspired research. ",
+                            "Currently working on publishing a system paper concerning the project."
+                        ]}
+                    />
+                </div>
+
+                <SectionDivider svg="/svgs/light-bulb.svg" title="Honors"/>
+                <div className="lg:w-11/12 md:mx-auto">
+                    <Honors skills={
+                        {
+                            "Chancellors List — UNC Charlotte": "Awarded for earning above 3.8 GPA, All semesters",
+                            "Student Marshal — UNC Charlotte": "Selected based on academic performance.",
+                            "Atkins Library UG Research Award": "Awarded for contribution to field, depth/breadth of project, and use of library resources."
+                        }
+                    }/>
+                </div>
+
+                <div className="my-32">
+                </div>
+
             </div>
         </div>
     )
