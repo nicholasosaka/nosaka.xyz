@@ -1,8 +1,14 @@
 import Header from '../components/Header'
+import Head from 'next/head'
 
 export default function About() {
     return (
         <div>
+            <Head>
+                 <title>about - nosaka</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <Header/>
             <div className="mt-8 xl:mt-20 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
                 <h1 className="text-4xl uppercase font-extrabold mb-5">About</h1>

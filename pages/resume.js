@@ -1,4 +1,5 @@
 import Header from '../components/Header'
+import Head from 'next/head'
 import Link from 'next/link'
 import {Education} from '../components/Resume'
 import {IconLink} from '../components/IconLink'
@@ -7,6 +8,11 @@ import {SectionDivider} from '../components/SectionDivider'
 export default function Resume() {
     return (
         <div>
+            <Head>
+                <title>resume - nosaka</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <Header/>
             <div className="mt-8 xl:mt-20 mx-auto w-11/12 md:w-9/12 lg:w-8/12">
                 <h1 className="text-4xl uppercase font-extrabold mx-auto w-1/2 text-center text-chestnut">Resume</h1>
