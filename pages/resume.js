@@ -14,7 +14,7 @@ export default function Resume() {
             </Head>
 
             <Header/>
-            <div className="mt-8 xl:mt-20 mx-auto w-11/12 md:w-9/12 lg:w-8/12">
+            <div className="mt-8 xl:mt-20 mx-auto w-11/12 md:w-9/12 lg:w-9/12">
                 <h1 className="text-4xl uppercase font-extrabold mx-auto w-1/2 text-center text-chestnut">Resume</h1>
                 <div className="flex flex-row mx-auto sm:w-8/12 lg:w-6/12 justify-between my-3">
                     <IconLink svg="/svgs/github.svg" text="nosaka0" link="https://github.com/nosaka0"/>
@@ -24,7 +24,7 @@ export default function Resume() {
 
                 {/* Education */}
                 <SectionDivider svg="/svgs/academic-cap.svg" title="Education"/>
-                <div className="md:w-11/12 md:mx-auto">
+                <div className="lg:w-11/12 md:mx-auto">
                     <Education 
                         institution="University of North Carolina at Charlotte"
                         degreeField="Computer Science"
@@ -46,12 +46,12 @@ export default function Resume() {
 
                 {/* Skills */}
                 <SectionDivider svg="/svgs/chip.svg" title="Skills"/>
-                <div className="md:w-11/12 md:mx-auto">
+                <div className="lg:w-11/12 md:mx-auto">
                     <Skills skills={
                         {
-                            "Programming Languages": ["Python", "Java", "Kotlin", "JavaScript (ES6+)", "Rust", "HTML/CSS"],
-                            "Frameworks and libraries": ["Tensorflow", "PyTorch", "Scikit-learn","React","PyTest", "JUnit"],
-                            "Software Tools and Skills": ["Git", "BASH", "Linux", "Docker", "Agile/Scrum", "Continuous Integration", "Test Driven Development", "LaTeX"]
+                            "Programming": "Python, Java, Kotlin, JavaScript (ES6+), Rust, HTML/CSS",
+                            "Frameworks": "Tensorflow, PyTorch, Scikit-learn, React, PyTest, JUnit",
+                            "Software Skills": "Git, BASH, Linux, Docker, Agile/Scrum, Continuous Integration, Test Driven Development, LaTeX"
                         }
                     }/>
                 </div>
