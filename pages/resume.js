@@ -8,8 +8,8 @@ export default function Resume() {
     return (
         <div>
             <Header/>
-            <div className="mt-8 xl:mt-20 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
-                <h1 className="text-4xl uppercase font-extrabold mx-auto w-1/3 text-center text-chestnut">Resume</h1>
+            <div className="mt-8 xl:mt-20 mx-auto w-11/12 md:w-9/12 lg:w-8/12">
+                <h1 className="text-4xl uppercase font-extrabold mx-auto w-1/2 text-center text-chestnut">Resume</h1>
                 <div className="flex flex-row mx-auto sm:w-8/12 lg:w-6/12 justify-between my-3">
                     <IconLink svg="/svgs/github.svg" text="nosaka0" link="https://github.com/nosaka0"/>
                     <IconLink svg="/svgs/email.svg" text="nosaka@uncc.edu" link="mailto:nosaka@uncc.edu"/>
