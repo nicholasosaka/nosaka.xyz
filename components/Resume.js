@@ -33,4 +33,33 @@ const Education = (props) => {
     )
 }
 
-export {Education}
+const Skills = (props) => {
+
+    return (
+        <div className="grid grid-cols-6 my-4 gap-1">
+            {Object.entries(props.skills).map(
+                function(ditem, idx) {
+                    return (
+                        <>
+                            <h2 className="text-xl font-bold col-span-6 sm:col-span-2">{ditem[0]}</h2>
+                            <ul className="col-span-6 sm:col-span-4 font-light">
+                                {ditem[1].map(
+                                    function(skill, idx) {
+                                        console.log(idx, ditem[1])
+                                        return idx == (ditem[1].length - 1) ? (
+                                            <li id={idx} className="inline mr-0.5">{skill}</li>
+                                        ) : (
+                                            <li id={idx} className="inline mr-0.5">{skill},</li>
+                                        )
+                                    }
+                                )}
+                            </ul>
+                        </>
+                    )
+                }
+            )}
+        </div>
+    )
+}
+
+export {Education, Skills}

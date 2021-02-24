@@ -1,7 +1,7 @@
 import Header from '../components/Header'
 import Head from 'next/head'
 import Link from 'next/link'
-import {Education} from '../components/Resume'
+import {Education, Skills} from '../components/Resume'
 import {IconLink} from '../components/IconLink'
 import {SectionDivider} from '../components/SectionDivider'
 
@@ -46,6 +46,15 @@ export default function Resume() {
 
                 {/* Skills */}
                 <SectionDivider svg="/svgs/chip.svg" title="Skills"/>
+                <div className="md:w-11/12 md:mx-auto">
+                    <Skills skills={
+                        {
+                            "Programming Languages": ["Python", "Java", "Kotlin", "JavaScript (ES6+)", "Rust", "HTML/CSS"],
+                            "Frameworks and libraries": ["Tensorflow", "PyTorch", "Scikit-learn","React","PyTest", "JUnit"],
+                            "Software Tools and Skills": ["Git", "BASH", "Linux", "Docker", "Agile/Scrum", "Continuous Integration", "Test Driven Development", "LaTeX"]
+                        }
+                    }/>
+                </div>
             </div>
         </div>
     )
