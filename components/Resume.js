@@ -10,10 +10,10 @@ const Education = (props) => {
 
     return (
         <div className="grid grid-cols-5 my-4">
-            <h1 className="order-1 col-span-5 text-base md:col-span-4 md:text-xl font-bold">{props.institution}</h1>
-            <p className="order-2 col-span-2 text-sm md:text-base lg:col-span-1 lg:text-right lg:mx-5">{props.location}</p>
-            <p className="order-4 lg:order-3 col-span-5 lg:col-span-4 text-chestnut">{props.degreeType} in {props.degreeField}</p>
-            <p className="order-3 lg:order-4 col-start-5 text-sm md:text-base md:text-right md:mx-5 font-extralight text-jet">{props.graduation}</p>
+            <h1 className="order-1 col-span-5 text-base md:col-span-4 md:text-xl font-bold tracking-tight">{props.institution}</h1>
+            <p className="order-3 col-span-2 text-sm md:text-base lg:col-span-1 lg:text-right tracking-tight">{props.location}</p>
+            <p className="order-2 lg:order-3 col-span-5 lg:col-span-4 text-chestnut">{props.degreeType} in {props.degreeField}</p>
+            <p className="order-4 lg:order-4 col-start-5 text-sm md:text-base md:text-right font-extralight tracking-tight text-jet">{props.graduation}</p>
             <ul className="order-5 col-span-4 pt-1.5">
             {
                 props.info.map(
@@ -62,10 +62,10 @@ const Work = (props) => {
 
     return (
         <div className="grid grid-cols-5 my-4">
-        <h1 className="order-1 col-span-5 text-base md:col-span-4 md:text-xl font-bold">{props.title}</h1>
-        <p className="order-2 col-span-2 text-sm md:text-base lg:col-span-1 lg:text-right lg:mx-5">{props.location}</p>
-        <p className="order-4 lg:order-3 col-span-4 lg:col-span-3 text-chestnut">{props.employer}</p>
-        <p className="order-3 lg:order-4 col-start-4 col-span-2 text-sm md:text-base md:text-right md:mx-5 font-extralight text-jet">{props.date}</p>
+        <h1 className="order-1 col-span-5 text-base md:col-span-4 md:text-xl font-bold tracking-tight">{props.title}</h1>
+        <p className="order-3 col-span-2 text-sm md:text-base lg:col-span-1 lg:text-right tracking-tight">{props.location}</p>
+        <p className="order-2 lg:order-3 col-span-4 lg:col-span-3 text-chestnut">{props.employer}</p>
+        <p className="order-4 lg:order-4 col-start-4 col-span-2 text-sm md:text-base md:text-right font-extralight tracking-tight text-jet">{props.date}</p>
         <ul className="order-5 col-span-4 pt-2">
         {
             props.info.map(
@@ -94,12 +94,13 @@ const Research = (props) => {
     //      .info (array)
 
     return (
-        <div className="grid grid-cols-5 my-4">
-        <h1 className="order-1 col-span-5 text-base md:col-span-4 md:text-xl font-bold">{props.title}</h1>
-        <p className="order-2 col-span-2 text-sm md:text-base lg:col-span-1 lg:text-right lg:mx-5">{props.location}</p>
-        <p className="order-4 lg:order-3 col-span-4 lg:col-span-3 text-chestnut font-bold lg:font-normal">{props.employer}</p>
-        <p className="order-3 lg:order-4 col-start-4 col-span-2 text-sm md:text-base md:text-right md:mx-5 font-extralight text-jet">{props.date}</p>
-        <ul className="order-5 col-span-4 pt-2">
+        <div className="grid grid-cols-4 my-4">
+        <h1 className="order-1 col-span-4 text-base lg:col-span-3 tracking-tight md:text-xl font-bold">{props.title}</h1>
+        <p className="order-4 lg:order-3 col-span-4 lg:col-span-3 text-chestnut">{props.lab}</p>
+        <p className="order-5 lg:order-5 col-span-4 text-chestnut">{props.supervisor}</p>
+        <p className="order-2 lg:order-2 col-span-2 lg:col-span-1 tracking-tight lg:text-right">{props.location}</p>
+        <p className="order-3 lg:order-4 col-span-2 lg:col-span-1 font-extralight tracking-tight text-right lg:mt-1">{props.date}</p>
+        <ul className="order-6 col-span-4 mt-3">
         {
             props.info.map(
                 function(info, idx) {

@@ -90,8 +90,9 @@ export default function Resume() {
                 <div className="lg:w-11/12 md:mx-auto">
                     <Research
                         title="NSF REU Research Project — Community Oversight for Privacy and Security"
-                        employer="UNC Charlotte, CO-oPS Project — Dr. Heather Lipford"
-                        location="Charlotte, NC"
+                        lab="CO-oPS Project (Multiple Institutions)"
+                        supervisor="Dr. Heather Lipford"
+                        location="UNC Charlotte"
                         date="May 2020 — Aug 2020"
                         info={[
                             "Assists with Software Engineering course of over 80 students, facilitating discussions on course-related content between students.",
@@ -100,9 +101,10 @@ export default function Resume() {
                         ]}
                     />
                     <Research
-                        title="Augmented Reality and Machine Learning for Medical Use — Undergraduate Research"
-                        employer="UNC Charlotte, Autonomous Intelligent Wireless Networked Systems Laboratory — Dr. Pu Wang"
-                        location="Charlotte, NC"
+                        title="Augmented Reality and Machine Learning for Medical Use"
+                        lab="Autonomous Intelligent Wireless Networked Systems Laboratory"
+                        supervisor="Dr. Pu Wang"
+                        location="UNC Charlotte"
                         date="Apr 2018 — May 2020"
                         info={[
                             "Designed system for use in critical professions such as the medical industry.",
@@ -123,7 +125,7 @@ export default function Resume() {
                     }/>
                 </div>
 
-                <div className="my-32">
+                <div className="my-64">
                 </div>
 
             </div>
