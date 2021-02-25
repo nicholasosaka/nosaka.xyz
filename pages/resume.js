@@ -95,9 +95,10 @@ export default function Resume() {
                         location="UNC Charlotte"
                         date="May 2020 — Aug 2020"
                         info={[
-                            "Assists with Software Engineering course of over 80 students, facilitating discussions on course-related content between students.",
-                            "Design demonstrative code and interactive learning elements for students to understand Software Engineering.",
-                            "Led weekly lab instruction for 40 students in order to facilitate active learning for the department's CS1 course.",
+                            "Designed and developed an Android mobile application with research intent.",
+                            "Implemented modern Android development practices with MVVM architecture and NoSQL databases.",
+                            "Participated in weekly meetings to understand research objectives and create solutions to challenging obstacles.",
+                            "Developed experience in Android, Kotlin, Firebase, and Room."
                         ]}
                     />
                     <Research
@@ -105,7 +106,7 @@ export default function Resume() {
                         lab="Autonomous Intelligent Wireless Networked Systems Laboratory"
                         supervisor="Dr. Pu Wang"
                         location="UNC Charlotte"
-                        date="Apr 2018 — May 2020"
+                        date="Dec 2019 — May 2020"
                         info={[
                             "Designed system for use in critical professions such as the medical industry.",
                             "Utilized EPSON MOVERIO smart glasses in conjunction with Tensorflow Lite and other related technologies for user-inspired research. ",
