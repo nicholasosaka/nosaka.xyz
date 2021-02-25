@@ -1,5 +1,6 @@
 ---
 title:  "Hello World"
+byline: "or how I'm starting a new project"
 excerpt: "It's how I start most projects: using this phrase as a place holder. It's also how I'll start this one. I'm going to be writing over the next few months on *things* that I find interesting or engaging."
 time: 1
 date: "2021-02-25"

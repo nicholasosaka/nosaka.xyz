@@ -12,7 +12,8 @@ export async function getAllPosts() {
       title: meta.data.title,
       excerpt: meta.data.excerpt,
       time: meta.data.time,
-      date: meta.data.date
+      date: meta.data.date,
+      byline: meta.data.byline
     })
   }
   return posts;
@@ -25,6 +26,7 @@ export async function getPostBySlug(slug) {
     title: meta.data.title, 
     time: meta.data.time,
     date: meta.data.date,
-    content: meta.content
+    content: meta.content,
+    byline: meta.data.byline
   }
 }

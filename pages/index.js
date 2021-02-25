@@ -36,9 +36,10 @@ export default function Home(props) {
                     <li key={idx} className="grid md:grid-cols-5 mb-5">
                       <Date date={post.date} bold={true}/>
                       <Link href={`/posts/${post.slug}`}>
-                        <a className="order-1 md:col-span-3 text-2xl font-bold link-animation">{post.title}</a>
+                        <a className="order-2 md:col-span-3 text-2xl font-bold link-animation">{post.title}</a>
                       </Link>
-                      <p className="order-last md:col-start-2 md:col-span-4 xl:col-start-2 xl:col-span-3 mt-2 leading-snug">
+                      <p className="order-3 -mt-1 md:col-start-2 md:col-span-4 font-light text-chestnut">{post.byline}</p>
+                      <p className="order-4 md:col-start-2 md:col-span-4 xl:col-start-2 xl:col-span-3 mt-1 leading-snug font-extralight">
                         {
                           unified()
                           .use(parse)

@@ -24,6 +24,7 @@ export default function PostLayout(props) {
             </Head>
             <div className="sm:w-10/12 xl:w-8/12 mx-auto">
                 <h1 className="text-4xl font-extrabold">{props.title}</h1>
+                <h3 className="text-xl font-light text-chestnut">{props.byline}</h3>
                 <div className="mt-1">
                     <Date date={props.date} bold={false} />
                     <p className="ml-1.5 inline">⋅</p>

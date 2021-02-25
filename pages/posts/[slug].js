@@ -13,7 +13,7 @@ export default function BlogPost(props) {
 
             <Header/>
             <div className="mt-8 xl:mt-20 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
-                <PostLayout title={props.title} date={props.date} time={props.time} content={props.content}/>
+                <PostLayout title={props.title} date={props.date} time={props.time} content={props.content} byline={props.byline}/>
             </div>
         </div>
     )
