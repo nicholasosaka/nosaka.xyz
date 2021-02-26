@@ -41,7 +41,6 @@ export default function Resume() {
                         graduation="May 2022"
                         info={["GPA: 4.0", "Areas of interest: Ethical Theory, Aesthetics, Critical Theory"]}
                     />
-
                 </div>
 
                 {/* Skills */}
@@ -120,8 +119,9 @@ export default function Resume() {
                     <Honors skills={
                         {
                             "Chancellors List — UNC Charlotte": "Awarded for earning above 3.8 GPA, All semesters",
-                            "Student Marshal — UNC Charlotte": "Selected based on academic performance.",
-                            "Atkins Library UG Research Award": "Awarded for contribution to field, depth/breadth of project, and use of library resources."
+                            "Student Marshal — UNC Charlotte": "Awarded based on academic performance.",
+                            "Atkins Library UG Research Award": "Awarded for contribution to field, depth/breadth of project, and use of library resources.",
+                            "Phi Kappa Phi": "Honor Society, 2020 — Present"
                         }
                     }/>
                 </div>

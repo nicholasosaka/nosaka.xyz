@@ -18,10 +18,14 @@ const Education = (props) => {
             {
                 props.info.map(
                     function(info, idx) {
-                        return (
+                        return info.includes(":") ? (
                             <li key={idx} className="font-light text-sm sm:text-base">
                                 <p className="inline font-semibold">{info.split(":")[0]}:</p>
                                 <p className="inline">{info.split(":")[1]}</p>
+                            </li>
+                        ) : (
+                            <li key={idx} className="font-light text-sm sm:text-base">
+                                <p className="inline font-semibold italic">{info}</p>
                             </li>
                         )
                     }
