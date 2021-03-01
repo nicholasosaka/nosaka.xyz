@@ -1,11 +1,31 @@
+@font-face {
+  font-family: "Computer Modern";
+  src: url("fonts/Computer\ Modern/cm_regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url("fonts/Computer\ Modern/cm_bold.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url("fonts/Computer\ Modern/cm_italic.otf") format("opentype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Computer Modern";
+  src: url("fonts/Computer\ Modern/cm_bolditalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* ./styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-    .link-animation {
-        @apply transition duration-500 hover:underline hover:text-jet
-    }
+  .link-animation {
+    @apply transition duration-500 hover:underline hover:text-jet;
+  }
 }
