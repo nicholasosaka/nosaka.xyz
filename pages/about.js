@@ -16,6 +16,11 @@ export default function About() {
                     <p>Hi, I'm Nicholas. I'm an undergraduate student at the University of North Carolina at Charlotte studying Computer Science and Philosophy. My research interests include computer vision, physical sensing through novel imagery techniques, and natural language processing. With my double major in Philosophy, I've become acquainted with methods for approaching complex issues in emerging technology. </p>
                     <p>I'm also interested in science communication: relating what the current research is to everyday life. Engaging the public with current scientific thought encourages further development and advancement.</p>
                 </div>
+                <div className="prose">
+                    <p>contact:</p>
+                    <p>academic: nosaka at uncc dot edu</p>
+                    <p>professional: nicholas dot osaka at gmail dot com</p>
+                </div>
             </div>
         </div>
     )
