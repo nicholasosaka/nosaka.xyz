@@ -5,7 +5,6 @@ import {Education, Skills, Work, Research, Honors} from '../components/Resume'
 import {IconLink} from '../components/IconLink'
 import {SectionDivider} from '../components/SectionDivider'
 
-const smallIconSize = 17
 
 export default function Resume() {
     return (
@@ -19,9 +18,9 @@ export default function Resume() {
             <div className="mt-8 xl:mt-20 mx-auto w-11/12 md:w-9/12 lg:w-9/12">
                 <h1 className="text-4xl uppercase font-extrabold mx-auto w-1/2 text-center text-chestnut">Resume</h1>
                 <div className="flex flex-row mx-auto sm:w-8/12 lg:w-6/12 justify-between my-3">
-                    <IconLink svg="/svgs/github.svg" alt="GitHub Icon" text="nosaka0" height={smallIconSize} width={smallIconSize} link="https://github.com/nosaka0"/>
-                    <IconLink svg="/svgs/email.svg" alt="Email Icon" text="nosaka@uncc.edu" height={smallIconSize} width={smallIconSize} link="mailto:nosaka@uncc.edu"/>
-                    <IconLink svg="/svgs/linkedin.svg" alt="LinkedIn Icon" text="nosaka0" height={smallIconSize} width={smallIconSize} link="https://www.linkedin.com/in/nosaka0"/>
+                    <IconLink svg="/svgs/github.svg" alt="GitHub Icon" text="nosaka0" link="https://github.com/nosaka0"/>
+                    <IconLink svg="/svgs/email.svg" alt="Email Icon" text="nosaka@uncc.edu" link="mailto:nosaka@uncc.edu"/>
+                    <IconLink svg="/svgs/linkedin.svg" alt="LinkedIn Icon" text="nosaka0" link="https://www.linkedin.com/in/nosaka0"/>
                 </div>
 
                 {/* Education */}
