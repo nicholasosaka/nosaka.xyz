@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^2.11.0",
+    "@sanity/image-url": "^0.140.22",
+    "groq": "^2.2.6",
+    "moment": "^2.29.1",
     "next": "11.0.1",
+    "next-sanity": "^0.3.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-lines-ellipsis": "^0.15.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.1",
