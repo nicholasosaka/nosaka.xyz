@@ -1,9 +1,8 @@
-import Header from '../components/Header'
+import Header from '@components/Header'
 import Head from 'next/head'
-import Link from 'next/link'
-import {Education, Skills, Work, Research, Honors} from '../components/Resume'
-import {IconLink} from '../components/IconLink'
-import {SectionDivider} from '../components/SectionDivider'
+import {Education, Skills, Work, Research, Honors} from '@components/Resume'
+import {IconLink} from '@components/IconLink'
+import {SectionDivider} from '@components/SectionDivider'
 
 
 export default function Resume() {

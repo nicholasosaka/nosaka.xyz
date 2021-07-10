@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Header from '../components/Header'
-import AllPosts from '../components/AllPosts'
+import Header from '@components/Header'
+import AllPosts from '@components/AllPosts'
 import groq from 'groq'
 import sanity from '../lib/sanity'
 
@@ -23,7 +23,7 @@ const Home = (props: any) => {
   )
 }
 
-const query = groq`*[_type == "post"]`
+const query = groq`*[_type == "post"] | order(publishedAt desc)`
 
 export async function getStaticProps() {
   const posts = await sanity.fetch(query)

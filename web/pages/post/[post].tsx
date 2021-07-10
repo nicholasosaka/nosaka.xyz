@@ -1,8 +1,8 @@
 import groq from 'groq'
 import Head from "next/head";
-import Header from '../../components/Header'
-import sanity from '../../lib/sanity'
-import PostLayout from '../../components/PostLayout'
+import Header from '@components/Header'
+import sanity from '@lib/sanity'
+import PostLayout from '@components/PostLayout'
 import imageUrlBuilder from '@sanity/image-url'
 
 const Post = (props: any) => {
@@ -56,9 +56,7 @@ export async function getStaticProps( params: {params: { post: string }} ) {
     // params contains the post `post`.
     // If the route is like /post/1, then params.post is 1
     const slug = params.params.post
-    console.log(slug)
     const post = await sanity.fetch(query, { slug })
-  
     // Pass post data to the page via props
     return { props: { post } }
 }

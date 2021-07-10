@@ -1,6 +1,22 @@
 import sanity from '../lib/sanity'
 import BlockContent from '@sanity/block-content-to-react'
 import Date from './Date'
+import PortableImage from './PortableText/PortableImage'
+import imageUrlBuilder from '@sanity/image-url'
+
+const builder = imageUrlBuilder(sanity)
+
+const serializers = {
+    types: {
+        image: (props: any) => {
+            return (
+                <PortableImage 
+                    url={builder.image(props.node).url()}
+                />
+            )
+        } 
+    }
+}
 
 const PostLayout = (props: any) => {
     const { title = 'Untitled', subtitle = '', name, categories, authorImage, body = [], publishedAt } = props
@@ -21,6 +37,7 @@ const PostLayout = (props: any) => {
                 <article className="prose max-w-none py-10 font-cmu ">
                     <BlockContent
                         blocks={body}
+                        serializers={serializers}
                         imageOptions={{ w: 320, h: 240, fit: 'max' }}
                         {...sanity.config()}
                     />
