@@ -9,7 +9,7 @@ const AllPosts = (props: any) => {
             {posts.map((post: any) => post.slug && (
                 <li key={post._id} className="grid md:grid-cols-5 mb-5">
                     <Date date={post.publishedAt}/>
-                    <Link href={`/posts/${post.slug.current}`}>
+                    <Link href={`/post/${post.slug.current}`}>
                         <a className="order-2 md:col-span-3 text-2xl font-bold link-animation">{post.title}</a>
                     </Link>
                     <p className="order-3 -mt-1 md:col-start-2 md:col-span-4 font-light text-chestnut">{post.subtitle}</p>

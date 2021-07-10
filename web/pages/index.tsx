@@ -25,9 +25,13 @@ const Home = (props: any) => {
 
 const query = groq`*[_type == "post"]`
 
-Home.getInitialProps = async () => {
+export async function getStaticProps() {
   const posts = await sanity.fetch(query)
-  return {posts: posts} 
+  return {
+    props: {
+      posts: posts
+    }
+  } 
 }
 
 export default Home
