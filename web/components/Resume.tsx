@@ -10,11 +10,11 @@ const Education = (props: any) => {
 
     return (
         <div className="grid grid-cols-5 my-4">
-            <h1 className="order-1 col-span-5 text-base md:col-span-4 md:text-xl font-bold tracking-tight">{props.institution}</h1>
-            <p className="order-3 col-span-2 text-sm md:text-base lg:col-span-1 lg:text-right tracking-tight">{props.location}</p>
-            <p className="order-2 lg:order-3 col-span-5 lg:col-span-4 text-chestnut">{props.degreeType} in {props.degreeField}</p>
-            <p className="order-4 lg:order-4 col-start-5 text-sm md:text-base md:text-right font-extralight tracking-tight text-jet">{props.graduation}</p>
-            <ul className="order-5 col-span-4 pt-1.5">
+            <h1 className="order-1 col-span-5 text-base md:col-span-4 md:text-xl font-bold tracking-tight ">{props.institution}</h1>
+            <p className="order-4 col-span-2 lg:order-2 lg:col-span-1 lg:text-right tracking-tight">{props.location}</p>
+            <p className="order-2 lg:order-3 col-span-4 lg:col-span-4 text-chestnut">{props.degreeType} in {props.degreeField}</p>
+            <p className="order-3 lg:order-4 col-start-5 text-right font-extralight tracking-tight text-jet">{props.graduation}</p>
+            <ul className="order-5 col-span-4 pt-2">
             {
                 props.info.map(
                     function(info: any, idx: number) {
@@ -67,15 +67,15 @@ const Work = (props: any) => {
     return (
         <div className="grid grid-cols-5 my-4">
         <h1 className="order-1 col-span-5 text-base md:col-span-4 md:text-xl font-bold tracking-tight">{props.title}</h1>
-        <p className="order-3 col-span-2 text-sm md:text-base lg:col-span-1 lg:text-right tracking-tight">{props.location}</p>
-        <p className="order-2 lg:order-3 col-span-4 lg:col-span-3 text-chestnut">{props.employer}</p>
-        <p className="order-4 lg:order-4 col-start-4 col-span-2 text-sm md:text-base md:text-right font-extralight tracking-tight text-jet">{props.date}</p>
-        <ul className="order-5 col-span-4 pt-2">
+        <p className="order-2 col-span-2 lg:col-span-1 lg:text-right tracking-tight">{props.location}</p>
+        <p className="order-4 lg:order-3 col-span-4 lg:col-span-3 text-chestnut">{props.employer}</p>
+        <p className="order-3 lg:order-4 col-span-3 lg:col-span-2 font-extralight tracking-tight text-right text-jet">{props.date}</p>
+        <ul className="order-5 col-span-4 pt-2 list-disc">
         {
             props.info.map(
                 function(info: any, idx: number) {
                     return (
-                        <li key={idx} className="font-light text-sm sm:text-base tracking-tight mb-1">
+                        <li key={idx} className="font-light text-sm sm:text-base tracking-tight mt-1">
                             <p className="inline">{info}</p>
                         </li>
                     )
@@ -103,13 +103,13 @@ const Research = (props: any) => {
         <p className="order-4 lg:order-3 col-span-4 lg:col-span-3 text-chestnut">{props.lab}</p>
         <p className="order-5 lg:order-5 col-span-4 text-chestnut">{props.supervisor}</p>
         <p className="order-2 lg:order-2 col-span-2 lg:col-span-1 tracking-tight lg:text-right">{props.location}</p>
-        <p className="order-3 lg:order-4 col-span-2 lg:col-span-1 font-extralight tracking-tight text-right lg:mt-1">{props.date}</p>
-        <ul className="order-6 col-span-4 mt-3">
+        <p className="order-3 lg:order-4 col-span-2 lg:col-span-1 font-extralight tracking-tight text-right text-jet">{props.date}</p>
+        <ul className="order-6 col-span-4 mt-3 list-disc list-inside">
         {
             props.info.map(
                 function(info: any, idx: number) {
                     return (
-                        <li key={idx} className="font-light text-sm sm:text-base tracking-tight mb-1">
+                        <li key={idx} className="font-light text-sm sm:text-base tracking-tight mt-1">
                             <p className="inline">{info}</p>
                         </li>
                     )
