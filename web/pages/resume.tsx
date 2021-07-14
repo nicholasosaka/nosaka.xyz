@@ -59,6 +59,20 @@ export default function Resume() {
                 <SectionDivider svg="/svgs/briefcase.svg" title="Work Experience"/>
                 <div className="lg:w-11/12 md:mx-auto">
                     <Work
+                        title="ECLDP Tech & Data Intern"
+                        employer="The Hartford"
+                        location="Hartford, CT"
+                        date="May 2021 — Aug 2021"
+                        info={[
+                            "Interned remotely in the Leadership Development Program Ops, Tech, Data & Analytics track.",
+                            "Built a portfolio management intake tool for the Executive Data Office estimated to save over $30k a year with three other interns.",
+                            "Led multiple meetings with different lines of business in order to identify best approach for architecture, deployment, and access control.",
+                            "Developed teamworking and leadership skills while working in a remote environment.",
+                            "Application included Node.js front and back ends, with an Express.js RESTful API layer which manages data exchange to database.",
+                            "Analytics were integrated using Tableau for a Director to identify blockers and advance business initiatives"
+                        ]}
+                    />
+                    <Work
                         title="Teaching Assistant"
                         employer="UNC Charlotte Department of Computer Science"
                         location="Charlotte, NC"
