@@ -79,8 +79,8 @@ export default function Resume() {
                         date="Jan 2019 — Present"
                         info={[
                             "Assists with Software Engineering course of over 80 students, facilitating discussions on course-related content between students.",
-                            "Design demonstrative code and interactive learning elements for students to understand Software Engineering.",
-                            "Led weekly lab instruction for 40 students in order to facilitate active learning for the department's CS1 course.",
+                            "Designs demonstrative code and interactive learning elements for students to understand Software Engineering.",
+                            "Led weekly lab instruction for 40 students in order to facilitate active learning for CS1 course.",
                         ]}
                     />
                     <Work
@@ -110,7 +110,7 @@ export default function Resume() {
                         info={[
                             "Designed and developed an Android mobile application with research intent.",
                             "Implemented modern Android development practices with MVVM architecture and NoSQL databases.",
-                            "Participated in weekly meetings to understand research objectives and create solutions to challenging obstacles.",
+                            "Participated in weekly meetings to discuss research objectives and create solutions to challenging obstacles.",
                             "Developed experience in Android, Kotlin, Firebase, and Room."
                         ]}
                     />
@@ -122,8 +122,7 @@ export default function Resume() {
                         date="Dec 2019 — May 2020"
                         info={[
                             "Designed system for use in critical professions such as the medical industry.",
-                            "Utilized EPSON MOVERIO smart glasses in conjunction with Tensorflow Lite and other related technologies for user-inspired research. ",
-                            "Currently working on publishing a system paper concerning the project."
+                            "Utilized EPSON MOVERIO smart glasses in conjunction with Tensorflow Lite and other related technologies for user-inspired research in possible solutions for cognitive overload in error-critical professions."
                         ]}
                     />
                 </div>
