@@ -59,10 +59,10 @@ export default function Resume() {
                 <SectionDivider svg="/svgs/briefcase.svg" title="Work Experience"/>
                 <div className="lg:w-11/12 md:mx-auto">
                     <Work
-                        title="ECLDP Tech & Data Intern"
+                        title="Technology & Data Intern — Leadership Development Program"
                         employer="The Hartford"
                         location="Hartford, CT"
-                        date="May 2021 — Aug 2021"
+                        date="May 2021 — August 2021"
                         info={[
                             "Interned remotely in the Leadership Development Program Ops, Tech, Data & Analytics track.",
                             "Built a portfolio management intake tool for the Enterprise Data Office estimated to save over $30k a year with three other interns.",
@@ -87,7 +87,7 @@ export default function Resume() {
                         title="Motion Graphic Designer"
                         employer="The Littlefield Company"
                         location="Charlotte, NC"
-                        date="Apr 2018 — May 2020"
+                        date="April 2018 — May 2020"
                         info={[
                             "Designed motion graphic content for projects requiring displays of complex data.",
                             "Translated clients quantitative needs into creative goals for projects.",
@@ -106,7 +106,7 @@ export default function Resume() {
                         lab="CO-oPS Project (Multiple Institutions)"
                         supervisor="Dr. Heather Lipford"
                         location="UNC Charlotte"
-                        date="May 2020 — Aug 2020"
+                        date="May 2020 — August 2020"
                         info={[
                             "Designed and developed an Android mobile application with research intent.",
                             "Implemented modern Android development practices with MVVM architecture and NoSQL databases.",
@@ -119,7 +119,7 @@ export default function Resume() {
                         lab="Autonomous Intelligent Wireless Networked Systems Laboratory"
                         supervisor="Dr. Pu Wang"
                         location="UNC Charlotte"
-                        date="Dec 2019 — May 2020"
+                        date="December 2019 — May 2020"
                         info={[
                             "Designed system for use in critical professions such as the medical industry.",
                             "Utilized EPSON MOVERIO smart glasses in conjunction with Tensorflow Lite and other related technologies for user-inspired research in possible solutions for cognitive overload in error-critical professions."
@@ -127,7 +127,7 @@ export default function Resume() {
                     />
                 </div>
 
-                <SectionDivider svg="/svgs/light-bulb.svg" title="Honors"/>
+                <SectionDivider svg="/svgs/light-bulb.svg" title="Honors and Activities"/>
                 <div className="lg:w-11/12 md:mx-auto">
                     <Honors skills={
                         {
