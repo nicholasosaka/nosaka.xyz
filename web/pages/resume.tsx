@@ -1,5 +1,6 @@
 import Header from '@components/Header'
 import Head from 'next/head'
+import Link from 'next/link'
 import {Education, Skills, Work, Research, Honors} from '@components/Resume'
 import {IconLink} from '@components/IconLink'
 import {SectionDivider} from '@components/SectionDivider'
@@ -139,7 +140,16 @@ export default function Resume() {
                     }/>
                 </div>
 
-                <div className="my-64">
+                <div className="my-32">
+                    <h1 className="text-center text-3xl font-bold text-chestnut mb-8">View as PDF</h1>
+                    <div className="flex flex-row justify-center gap-x-16">
+                        <Link href="/cv.pdf" passHref>
+                            <a className="bg-transparent hover:bg-chestnut text-chestnut hover:text-white font-semibold py-2 px-4 border border-chestnut hover:border-transparent rounded">Download my CV</a>
+                        </Link>
+                        <Link href="/resume.pdf" passHref>
+                            <a className="bg-transparent hover:bg-chestnut text-chestnut hover:text-white font-semibold py-2 px-4 border border-chestnut hover:border-transparent rounded">Download my Resume</a>
+                        </Link>
+                    </div>
                 </div>
 
             </div>
