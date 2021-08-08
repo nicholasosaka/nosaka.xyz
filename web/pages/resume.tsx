@@ -1,9 +1,15 @@
 import Header from '@components/Header'
 import Head from 'next/head'
 import Link from 'next/link'
-import {Education, Skills, Work, Research, Honors} from '@components/Resume'
-import {IconLink} from '@components/IconLink'
-import {SectionDivider} from '@components/SectionDivider'
+
+import IconLink from '@components/IconLink'
+import SectionDivider from '@components/SectionDivider'
+
+import Education from '@components/Resume/Education'
+import Skills from '@components/Resume/Skills'
+import Industry from '@components/Resume/Industry'
+import Research from '@components/Resume/Research'
+import Honor from '@components/Resume/Honor'
 
 
 export default function Resume() {
@@ -59,7 +65,7 @@ export default function Resume() {
                 {/* Work Experience */}
                 <SectionDivider svg="/svgs/briefcase.svg" title="Work Experience"/>
                 <div className="lg:w-11/12 md:mx-auto">
-                    <Work
+                    <Industry
                         title="Technology & Data Intern — Leadership Development Program"
                         employer="The Hartford"
                         location="Hartford, CT"
@@ -73,7 +79,7 @@ export default function Resume() {
                             "Analytics were integrated using Tableau for a Director to identify blockers and advance business initiatives"
                         ]}
                     />
-                    <Work
+                    <Industry
                         title="Teaching Assistant"
                         employer="UNC Charlotte Department of Computer Science"
                         location="Charlotte, NC"
@@ -84,7 +90,7 @@ export default function Resume() {
                             "Led weekly lab instruction for 40 students in order to facilitate active learning for CS1 course.",
                         ]}
                     />
-                    <Work
+                    <Industry
                         title="Motion Graphic Designer"
                         employer="The Littlefield Company"
                         location="Charlotte, NC"
@@ -130,14 +136,30 @@ export default function Resume() {
 
                 <SectionDivider svg="/svgs/light-bulb.svg" title="Honors and Activities"/>
                 <div className="lg:w-11/12 md:mx-auto">
-                    <Honors skills={
-                        {
-                            "Chancellors List — UNC Charlotte": "Awarded for earning above 3.8 GPA, All semesters",
-                            "Student Marshal — UNC Charlotte": "Awarded based on academic performance.",
-                            "Atkins Library UG Research Award": "Awarded for contribution to field, depth/breadth of project, and use of library resources.",
-                            "Phi Kappa Phi": "Honor Society, 2020 — Present"
-                        }
-                    }/>
+                    <Honor
+                        title="Chancellors List"
+                        description="Awarded for earning above 3.8 GPA, All semesters"
+                        location="UNC Charlotte"
+                        date="2018 — 2021"
+                    />
+                    <Honor
+                        title="Student Marshal"
+                        description="Awarded based on academic performance"
+                        location="UNC Charlotte"
+                        date="2019"
+                    />
+                    <Honor
+                        title="Atkins Library Undergraduate Research Award"
+                        description="Awarded for contribution to field, depth/breadth of project, and use of library resources."
+                        location="UNC Charlotte"
+                        date="2020"
+                    />
+                    <Honor
+                        title="Phi Kappa Phi"
+                        description="Honor society member"
+                        location="UNC Charlotte"
+                        date="2019 — 2021"
+                    />
                 </div>
 
                 <div className="my-32">

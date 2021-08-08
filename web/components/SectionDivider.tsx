@@ -9,4 +9,4 @@ const SectionDivider = (props: any) => {
     )
 }
 
-export {SectionDivider}
+export default SectionDivider

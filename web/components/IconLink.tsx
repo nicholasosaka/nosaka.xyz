@@ -12,4 +12,4 @@ const IconLink = (props: any) => {
     )
 }
 
-export {IconLink}
+export default IconLink
