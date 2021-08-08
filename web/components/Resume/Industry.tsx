@@ -1,11 +1,12 @@
+type IndustryInformation = {
+    title: string
+    employer: string
+    location: string
+    date: string
+    info: string[]
+}
 
-const Work = (props: any) => {
-    // props
-    //      .title
-    //      .employer
-    //      .location
-    //      .date (range)
-    //      .info (array)
+const Industry = (props: IndustryInformation) => {
 
     return (
         <div className="grid grid-cols-5 my-4">
@@ -32,4 +33,4 @@ const Work = (props: any) => {
     )
 }
 
-export default Work
+export default Industry

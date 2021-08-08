@@ -1,11 +1,13 @@
+type ResearchInfo = {
+    title: string
+    lab: string
+    supervisor: string
+    location: string
+    date: string
+    info: string[]
+}
 
-const Research = (props: any) => {
-    // props
-    //      .title
-    //      .employer
-    //      .location
-    //      .date (range)
-    //      .info (array)
+const Research = (props: ResearchInfo) => {
 
     return (
         <div className="grid grid-cols-4 my-4">
