@@ -1,12 +1,14 @@
 
-const Education = (props: any) => {
-    // props
-    //      .institution
-    //      .degreeType
-    //      .degreeField
-    //      .location
-    //      .graduation
-    //      .info (array)
+type EducationInformation = {
+    institution: string
+    degreeType: string
+    degreeField: string
+    location: string
+    graduation: string
+    info: string[]
+}
+
+const Education = (props: EducationInformation) => {
 
     return (
         <div className="grid grid-cols-5 my-4">
