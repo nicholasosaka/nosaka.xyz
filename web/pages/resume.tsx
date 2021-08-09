@@ -54,7 +54,7 @@ export default function Resume() {
                         degreeType="Bachelor of Arts"
                         location="Charlotte, NC"
                         graduation="May 2022"
-                        info={["GPA: 4.0", "Areas of interest: Aesthetics, Critical Theory, Political Philosophy, Ethical Theory, Existentialism"]}
+                        info={["GPA: 4.0", "Emphasis on Ethics and Applied Philosophy"]}
                     />
                 </div>
 
