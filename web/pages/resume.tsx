@@ -61,12 +61,20 @@ export default function Resume() {
                 {/* Skills */}
                 <SectionDivider svg="/svgs/chip.svg" title="Skills"/>
                 <div className="lg:w-11/12 md:mx-auto">
-                    <Skills skills={
+                    <Skills entries={[
                         {
-                            "Programming": "Python, Java, Kotlin, JavaScript (ES6+), Rust, HTML/CSS",
-                            "Frameworks": "Tensorflow, PyTorch, Scikit-learn, React, PyTest, JUnit",
-                            "Software Skills": "Git, BASH, Linux, Docker, Agile/Scrum, Continuous Integration, Test Driven Development, LaTeX"
+                            category: "Programming",
+                            skills: ["Python", "Java", "Kotlin", "JavaScript", "Rust", "HTML/CSS"]
+                        },
+                        {
+                            category: "Frameworks",
+                            skills: ["Tensorflow", "PyTorch", "Scikit-learn", "React", "PyTest", "JUnit"]
+                        },
+                        {
+                            category: "Software Skills",
+                            skills: ["Git", "BASH", "Linux", "Docker", "Agile/Scrum", "Continuous Integration", "Test Driven Development", "LaTeX"]
                         }
+                    ]
                     }/>
                 </div>
 
