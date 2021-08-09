@@ -22,7 +22,15 @@ export default function Resume() {
 
             <Header/>
             <div className="mt-8 xl:mt-20 mx-auto w-11/12 md:w-9/12 lg:w-9/12">
-                <h1 className="text-4xl uppercase font-extrabold mx-auto w-1/2 text-center text-chestnut">Resume</h1>
+                <div className="transition transform duration-500 hover:scale-110 text-center my-8">
+                    <Link href="/resume.pdf" passHref>
+                        <button className="bg-transparent text-chestnut font-bold py-2 px-4 inline-flex items-center">
+                            <svg className="fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                            <h1 className="text-4xl uppercase font-extrabold mx-auto text-center">Resume</h1>
+                        </button>
+                    </Link>
+                </div>
+
                 <div className="flex flex-row mx-auto sm:w-8/12 lg:w-6/12 justify-between my-3">
                     <IconLink svg="/svgs/github.svg" alt="GitHub Icon" text="nosaka0" link="https://github.com/nosaka0"/>
                     <IconLink svg="/svgs/email.svg" alt="Email Icon" text="nosaka@uncc.edu" link="mailto:nosaka@uncc.edu"/>
@@ -163,13 +171,13 @@ export default function Resume() {
                 </div>
 
                 <div className="my-32">
-                    <h1 className="text-center text-3xl font-bold text-chestnut mb-8">View as PDF</h1>
+                    <h1 className="text-center text-3xl font-bold text-chestnut mb-8">Looking for more?</h1>
                     <div className="flex flex-row justify-center gap-x-16">
                         <Link href="/cv.pdf" passHref>
-                            <a className="bg-transparent hover:bg-chestnut text-chestnut hover:text-white font-semibold py-2 px-4 border border-chestnut hover:border-transparent rounded">Download my CV</a>
-                        </Link>
-                        <Link href="/resume.pdf" passHref>
-                            <a className="bg-transparent hover:bg-chestnut text-chestnut hover:text-white font-semibold py-2 px-4 border border-chestnut hover:border-transparent rounded">Download my Resume</a>
+                            <button className="transition duration-500 bg-transparent text-chestnut hover:bg-chestnut hover:text-white font-bold py-2 px-4 rounded inline-flex items-center border-2 border-chestnut">
+                                <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+                                <span className="">View my CV</span>
+                            </button>
                         </Link>
                     </div>
                 </div>
