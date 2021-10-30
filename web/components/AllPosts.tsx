@@ -15,7 +15,7 @@ const AllPosts = (props: any) => {
                     <p className="order-3 -mt-1 md:col-start-2 md:col-span-4 font-light text-chestnut">{post.subtitle}</p>
                     <LinesEllipsis 
                         className="order-4 md:col-start-2 md:col-span-4 xl:col-start-2 xl:col-span-3 mt-1 leading-snug font-extralight"
-                        text={post.body[0].children[0].text}
+                        text={normalizePostBody(post)}
                         maxLine='3'
                         ellipsis='...'
                         trimRight
@@ -25,6 +25,14 @@ const AllPosts = (props: any) => {
             ))}
         </ul>
     )
+}
+
+const normalizePostBody = (post: any) => {
+    let normalized = ""
+    post.body[0].children.forEach((child: { text: string }) => {
+        normalized += child.text
+    })
+    return normalized
 }
 
 export default AllPosts
