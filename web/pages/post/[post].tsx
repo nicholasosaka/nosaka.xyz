@@ -6,7 +6,7 @@ import PostLayout from '@components/PostLayout'
 import imageUrlBuilder from '@sanity/image-url'
 
 const Post = (props: any) => {
-    const { title = 'Untitled', subtitle = '', name, categories, authorImage, body = [], publishedAt } = props
+    const { title = 'Untitled', subtitle = '', name, categories, authorImage, body = [], publishedAt, mainImage } = props
     return (
         <div>
             <Head>
@@ -15,7 +15,7 @@ const Post = (props: any) => {
             </Head>
 
             <Header/>
-            <div className="mt-8 xl:mt-20 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
+            <div className="mt-8 xl:mt-10 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
                 <PostLayout {...props.post}/> 
             </div>
         </div>
@@ -31,7 +31,8 @@ const query = groq`*[_type == "post" && slug.current == $slug][0]{
     "name": author->name,
     "categories": categories[]->title,
     body,
-    publishedAt
+    publishedAt,
+    mainImage
   }`
 
 // This function gets called at build time on server-side.

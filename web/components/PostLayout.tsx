@@ -19,10 +19,20 @@ const serializers = {
 }
 
 const PostLayout = (props: any) => {
-    const { title = 'Untitled', subtitle = '', name, categories, authorImage, body = [], publishedAt } = props
+    const { title = 'Untitled', subtitle = '', name, categories, authorImage, body = [], publishedAt, mainImage } = props
     return (
         <>
             <div className="sm:w-10/12 xl:w-8/12 mx-auto">
+
+                {mainImage && (
+                    <div className="mt-0 mb-8">
+                        <BlockContent
+                            blocks={mainImage}
+                            serializers={serializers}
+                            {...sanity.config()}
+                        />
+                    </div>
+                )}
                 <h1 className="text-3xl md:text-4xl font-extrabold">{title}</h1>
                 <h3 className="md:text-xl font-light text-chestnut">{subtitle}</h3>
                 <div className="mt-1 font-light">
