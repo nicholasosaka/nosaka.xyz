@@ -39,7 +39,7 @@ const PostLayout = (props: any) => {
                     {name && (
                         <>
                             <p className="inline">{name}</p>
-                            <p className="ml-1.5 inline">⋅</p>
+                            <p className="mx-1.5 inline">⋅</p>
                         </>
                     )}
                     <Date date={publishedAt}/>
