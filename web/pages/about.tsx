@@ -14,7 +14,7 @@ export default function About() {
                 <h1 className="text-4xl uppercase font-extrabold mb-5">About</h1>
                 <div className="prose">
                     <p>Hi, I&apos;m Nicholas. I&apos;m an undergraduate student at the University of North Carolina at Charlotte studying Computer Science and Philosophy. My research interests include natural language processing and exploration of implicit bias in large language models. With my double major in Philosophy, I&apos;ve become acquainted with methods for approaching complex issues in emerging technology. </p>
-                    <p>My primary philosophical interests lie at the intersection of society and technology: addressing emergent social issues as we interact with novel (or not so novel) technologies.</p>
+                    <p>My primary philosophical interests lie at the intersection of society and technology: addressing the embedded social and political ideologies within novel (or not so novel) technologies.</p>
                 </div>
             </div>
         </div>
