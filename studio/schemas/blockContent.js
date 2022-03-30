@@ -8,6 +8,25 @@
  *    type: 'blockContent'
  *  }
  */
+ import React from 'react'
+
+const highlightIcon = () => (
+  <span style={{fontWeight: 'bold'}}>H</span>
+)
+
+const highlightRender = props => (
+  <span style={{ backgroundColor: 'yellow' }}>{props.children}</span>
+)
+
+const seperatorIcon = () => (
+  <span style={{fontWeight: 'bold'}}>—</span>
+)
+
+const seperatorRender = props => (
+  <span style={{ backgroundColor: '#C1C1C1' }}>—————</span>
+)
+
+
 export default {
   title: 'Block Content',
   name: 'blockContent',
@@ -36,6 +55,19 @@ export default {
         decorators: [
           {title: 'Strong', value: 'strong'},
           {title: 'Emphasis', value: 'em'},
+          {title: 'Code', value: 'code'},
+          {title: 'Highlight', value: 'highlight',
+            blockEditor: {
+              icon: highlightIcon,
+              render: highlightRender
+            }
+          },
+          {title: 'Seperator', value: 'seperator',
+            blockEditor: {
+              icon: seperatorIcon,
+              render: seperatorRender
+            }
+          }
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
