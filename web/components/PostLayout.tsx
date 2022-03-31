@@ -14,7 +14,14 @@ const serializers = {
                     url={builder.image(props.node).url()}
                 />
             )
-        } 
+        },
+    },
+    marks: {
+        seperator: (props: any) => {
+            return (
+                <div className="border-t-2"></div>
+            )
+        }
     }
 }
 
