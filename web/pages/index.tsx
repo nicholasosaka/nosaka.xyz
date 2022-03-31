@@ -6,7 +6,6 @@ import sanity from '../lib/sanity'
 
 const Home = (props: any) => {
   const currentPosts = props.posts.filter((p: { publishedAt: string }) => Date.parse(p.publishedAt) < Date.now() )
-  console.log(currentPosts)
 
   return (
     <div>
