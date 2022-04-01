@@ -22,7 +22,7 @@ export default function Resume() {
 
             <Header/>
             <div className="mt-8 xl:mt-20 mx-auto w-11/12 md:w-9/12 lg:w-9/12">
-                <div className="transition transform duration-500 hover:scale-110 text-center my-8">
+                <div className="transition duration-500 hover:scale-110 text-center my-8">
                     <Link href="/resume.pdf" passHref>
                         <button className="bg-transparent text-chestnut font-bold py-2 px-4 inline-flex items-center">
                             <svg className="fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>

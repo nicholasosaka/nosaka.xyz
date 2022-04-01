@@ -3,9 +3,9 @@ import Head from 'next/head'
 
 export default function About() {
     return (
-        <div>
+        <div className="bg-[url('/svgs/blobs/blob-wave.svg')] bg-bottom bg-no-repeat bg-cover h-screen">
             <Head>
-                 <title>about - nosaka</title>
+                <title>about - nosaka</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
