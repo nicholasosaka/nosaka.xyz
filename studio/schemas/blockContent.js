@@ -10,23 +10,6 @@
  */
  import React from 'react'
 
-const highlightIcon = () => (
-  <span style={{fontWeight: 'bold'}}>H</span>
-)
-
-const highlightRender = props => (
-  <span style={{ backgroundColor: 'yellow' }}>{props.children}</span>
-)
-
-const seperatorIcon = () => (
-  <span style={{fontWeight: 'bold'}}>—</span>
-)
-
-const seperatorRender = props => (
-  <span style={{ backgroundColor: '#C1C1C1' }}>—————</span>
-)
-
-
 export default {
   title: 'Block Content',
   name: 'blockContent',
@@ -56,18 +39,41 @@ export default {
           {title: 'Strong', value: 'strong'},
           {title: 'Emphasis', value: 'em'},
           {title: 'Code', value: 'code'},
-          {title: 'Highlight', value: 'highlight',
+          {
+            title: 'Highlight', value: 'highlight',
             blockEditor: {
-              icon: highlightIcon,
-              render: highlightRender
+              icon: () => <span style={{fontWeight: 'bold'}}>H</span>,
+              render: (props) => <span style={{ backgroundColor: 'yellow' }}>{props.children}</span>
             }
           },
-          {title: 'Seperator', value: 'seperator',
+          {
+            title: 'Underline', value: 'underline',
             blockEditor: {
-              icon: seperatorIcon,
-              render: seperatorRender
+              icon: () => <span style={{fontWeight: 'bold'}}>_</span>,
+              render: (props) => <span style={{textDecoration: "underline"}}>{props.children}</span>
             }
-          }
+          },
+          {
+            title: 'Strikethrough', value: 'strikethrough',
+            blockEditor: {
+              icon: () => <span style={{textDecoration: 'line-through'}}>S</span>,
+              render: (props) => <span style={{textDecoration: "line-through"}}>{props.children}</span>
+            }
+          },
+          {
+            title: 'Superscript', value: 'superscript',
+            blockEditor: {
+              icon: () => <span>S<sup>x</sup></span>,
+              render: (props) => <sup>{props.children}</sup>
+            }
+          },
+          {
+            title: 'Subscript', value: 'subscript',
+            blockEditor: {
+              icon: () => <span>S<sub>x</sub></span>,
+              render: (props) => <sub>{props.children}</sub>
+            }
+          },
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -93,5 +99,29 @@ export default {
       type: 'image',
       options: {hotspot: true},
     },
-  ],
+    {
+      type: 'object',
+      name: 'seperator',
+      fields: [
+        {
+          name: 'visible',
+          type: 'boolean'
+        }
+      ],
+    },
+    {
+      type: 'object',
+      name: 'Button',
+      fields: [
+        {
+          name: "uri",
+          type: "text",
+        },
+        {
+          name: "title",
+          type: "text"
+        }
+      ]
+    },
+    ],
 }
