@@ -5,8 +5,6 @@ import groq from 'groq'
 import sanity from '../lib/sanity'
 
 const Home = (props: any) => {
-
-
   return (
     <div>
       <Head>
