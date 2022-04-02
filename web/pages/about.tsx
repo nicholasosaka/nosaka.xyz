@@ -1,7 +1,11 @@
 import Header from '@components/Header'
 import Head from 'next/head'
+import groq from 'groq'
+import sanity from '../lib/sanity'
+import BlockContent from '@sanity/block-content-to-react'
+import serializers from '@lib/serializers'
 
-export default function About() {
+const About = (props: any) => {
     return (
         <div className="bg-[url('/svgs/blobs/blob-wave.svg')] bg-bottom bg-no-repeat bg-cover h-screen">
             <Head>
@@ -13,10 +17,28 @@ export default function About() {
             <div className="mt-8 xl:mt-20 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
                 <h1 className="text-4xl uppercase font-extrabold mb-5">About</h1>
                 <div className="prose">
-                    <p>Hi, I&apos;m Nicholas. I&apos;m an undergraduate student at the University of North Carolina at Charlotte studying Computer Science and Philosophy. My research interests include natural language processing and exploration of implicit bias in large language models. With my double major in Philosophy, I&apos;ve become acquainted with methods for approaching complex issues in emerging technology. </p>
-                    <p>My primary philosophical interests lie at the intersection of society and technology: addressing the embedded social and political ideologies within novel (or not so novel) technologies.</p>
+                    <BlockContent
+                        blocks={props.me.bio}
+                        serializers={serializers}
+                        imageOptions={{ w: 320, h: 240, fit: 'max' }}
+                        {...sanity.config()}
+                    />
                 </div>
             </div>
         </div>
     )
 }
+
+const query = groq`*[_type == "author" && slug.current == "nicholas-osaka"][0]`
+
+export async function getStaticProps() {
+  const me = await sanity.fetch(query)
+  return {
+    props: {
+      me: me
+    },
+    revalidate: 3600 //revalidate page contents upon request and at most every hour
+  } 
+}
+
+export default About
