@@ -10,6 +10,7 @@ import Skills from '@components/Resume/Skills'
 import Industry from '@components/Resume/Industry'
 import Research from '@components/Resume/Research'
 import Honor from '@components/Resume/Honor'
+import Certificate from '@components/Resume/Certificate'
 
 
 export default function Resume() {
@@ -42,6 +43,14 @@ export default function Resume() {
                 <div className="lg:w-11/12 md:mx-auto">
                     <Education 
                         institution="University of North Carolina at Charlotte"
+                        degreeField="Ethics & Applied Philosophy"
+                        degreeType="Master of Arts"
+                        location="Charlotte, NC"
+                        graduation="May 2024"
+                        info={["Areas of focus: feminist philosophy, social epistemology, social and political philosophy, ethical theory, disability theory"]}
+                    />
+                    <Education 
+                        institution="University of North Carolina at Charlotte"
                         degreeField="Computer Science"
                         degreeType="Bachelor of Science"
                         location="Charlotte, NC"
@@ -59,7 +68,7 @@ export default function Resume() {
                 </div>
 
                 {/* Skills */}
-                <SectionDivider svg="/svgs/chip.svg" title="Skills"/>
+                <SectionDivider svg="/svgs/chip.svg" title="Technical Skills"/>
                 <div className="lg:w-11/12 md:mx-auto">
                     <Skills entries={[
                         {
@@ -71,7 +80,7 @@ export default function Resume() {
                             skills: ["Tensorflow", "PyTorch", "Scikit-learn", "React", "PyTest", "JUnit"]
                         },
                         {
-                            category: "Software Skills",
+                            category: "Tools/Models",
                             skills: ["Git", "BASH", "Linux", "Docker", "Agile/Scrum", "Continuous Integration", "Test Driven Development", "LaTeX"]
                         }
                     ]
@@ -81,6 +90,19 @@ export default function Resume() {
                 {/* Work Experience */}
                 <SectionDivider svg="/svgs/briefcase.svg" title="Work Experience"/>
                 <div className="lg:w-11/12 md:mx-auto">
+                    <Industry
+                        title="Tech, Data & Analytics Associate — Leadership Development Program"
+                        employer="The Hartford"
+                        location="Charlotte, NC"
+                        date="July 2022 — Present"
+                        info={[
+                            "Tech, Data & Analytics Leadership Development Program Associate (2-3 year program)",
+                            "Rotates through different roles based on experience and growth areas in intervals of 6 to 12 months",
+                            "Develops comprehensive understanding of business practices and technical integration",
+                            "Curates early career experience based on professional interest and target career path",
+                        ]}
+                    />
+
                     <Industry
                         title="Technology & Data Intern — Leadership Development Program"
                         employer="The Hartford"
@@ -150,8 +172,44 @@ export default function Resume() {
                     />
                 </div>
 
-                <SectionDivider svg="/svgs/light-bulb.svg" title="Honors and Activities"/>
+                <SectionDivider svg="/svgs/clipboard-check.svg" title="Certifications and Credentials"/>
                 <div className="lg:w-11/12 md:mx-auto">
+                    <Certificate
+                        title="AWS Certified Cloud Practitioner"
+                        institution="Amazon Web Services"
+                        issued="Sep 2022"
+                        expiry="Sep 2025"
+                        url="https://www.credly.com/badges/c099c276-b493-4065-ac9d-d90d36a2dc7d/"
+                    />
+                    <Certificate
+                        title="Engineering: Responsible Conduct of Research"
+                        institution="CITI Program"
+                        issued="Mar 2021"
+                        expiry="Mar 2025"
+                        url="https://www.citiprogram.org/verify/?wcea19f73-0c93-4d86-8bee-555df4387a3d-41647235"
+                        _id="41647235"
+                    />
+                    <Certificate
+                        title="Social and Behavioral Sciences: Responsible Conduct of Research"
+                        institution="CITI Program"
+                        issued="Mar 2021"
+                        expiry="Mar 2025"
+                        url="https://www.citiprogram.org/verify/?w35e7a40d-ad1b-4005-a74d-fd61ed108deb-41647234"
+                        _id="41647234"
+                    />
+                    <Certificate
+                        title="IRB Committee Members - Basic Course"
+                        institution="CITI Program"
+                        issued="Sep 2020"
+                        expiry="Sep 2024"
+                        url="https://www.citiprogram.org/verify/?wa8ef10dd-bb5f-4a69-a2ea-75a139ae5e90-38222534"
+                        _id="38222534"
+                    />
+                </div>
+
+
+                <SectionDivider svg="/svgs/light-bulb.svg" title="Honors"/>
+                <div className="lg:w-11/12 md:mx-auto my-2">
                     <Honor
                         title="Chancellors List"
                         description="Awarded for earning above 3.8 GPA, All semesters"

@@ -12,9 +12,9 @@ const Education = (props: EducationInformation) => {
 
     return (
         <div className="grid grid-cols-5 my-4">
-            <h1 className="order-1 col-span-5 text-base md:col-span-4 md:text-xl font-bold tracking-tight ">{props.institution}</h1>
+            <h1 className="order-1 col-span-5 text-base md:col-span-4 md:text-xl font-bold tracking-tight ">{props.degreeType} in {props.degreeField}</h1>
             <p className="order-4 col-span-2 lg:order-2 lg:col-span-1 lg:text-right tracking-tight">{props.location}</p>
-            <p className="order-2 lg:order-3 col-span-4 lg:col-span-4 text-chestnut">{props.degreeType} in {props.degreeField}</p>
+            <p className="order-2 lg:order-3 col-span-4 lg:col-span-4 text-chestnut">{props.institution}</p>
             <p className="order-3 lg:order-4 col-start-5 text-right font-extralight tracking-tight text-jet">{props.graduation}</p>
             <ul className="order-5 col-span-4 pt-2">
             {
