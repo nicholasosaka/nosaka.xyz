@@ -7,7 +7,7 @@ import serializers from '@lib/serializers'
 
 const About = (props: any) => {
     return (
-        <div className="bg-[url('/svgs/blobs/blob-wave.svg')] bg-bottom bg-no-repeat bg-cover h-screen">
+        <div className="md:bg-[url('/svgs/blobs/blob-wave.svg')] bg-bottom bg-no-repeat bg-cover h-screen">
             <Head>
                 <title>about - nosaka</title>
                 <link rel="icon" href="/favicon.ico" />
