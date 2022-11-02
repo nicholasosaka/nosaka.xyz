@@ -1,0 +1,135 @@
+name: Nicholas Osaka
+links:
+  email: nosaka@uncc.edu
+  linkedin: nosaka0
+  github: nosaka0
+  website: https://nosaka.dev
+education:
+  - degree: Master of Arts in Ethics and Applied Philosophy
+    institution: University of North Carolina at Charlotte
+    location: Charlotte, NC
+    conferred: May 2024
+    highlights:
+      - 'Area of study: feminist philosophy, social epistemology, social and political philosophy, ethical theory, disability theory'
+  - degree: Bachelor of Science in Computer Science, Bachelor of Arts in Philosophy
+    institution: University of North Carolina at Charlotte
+    location: Charlotte, NC
+    conferred: May 2022
+    highlights:
+      - 'Concentration: Artificial Intelligence'
+      - 'Minor: Mathematics'
+      - 'Chancellors List: All semesters'
+      - Phi Kappa Phi Honor Society
+experience:
+ - title: Tech, Data & Analytics Leadership Development Program Associate
+   company: The Hartford
+   location: Charlotte, NC
+   startdate: July 2022
+   enddate: null
+   highlights:
+    - 2-3 year program where program associate rotates through different roles on 6 or 12 month intervals.
+    - Develops comprehensive understanding of business practices and technical integration
+    - Curates early career experience based on professional interest and target career path
+    - 'Current rotation: Solutions Architect, 12 month rotation'
+    - 'As a solution architect: applied architectural patterns in conversation with business and technical stakeholders to deliver designs for cloud transformation project.'
+peer-reviewed conference papers:
+  - title: Japanese Ethical Philosophy and Algorithm Design
+    location: Southern Appalachian Undergraduate Philosophy Conference
+    date: April 2022
+research:
+  - title: Research Assistant — Augmented Reality and Machine Learning for Medical Use
+    affiliation: UNC Charlotte, Autonomous Intelligent Wireless Networked Systems Laboratory — Dr. Pu Wang 
+    location: Charlotte, NC
+    startdate: August 2021
+    enddate: February 2022
+    highlights:
+      - Continued system design research for use in medical industry.
+      - Led development team in testing methodologies for approaching problem domain.
+      - Developed REST API for computer vision pipeline utilizing FaceNet, YOLOv5, and Tesseract for inference on images from smart glasses.
+  - title: NSF REU Research Project — Community Oversight for Privacy and Security
+    affiliation: UNC Charlotte, CO-oPS Project — Dr. Heather Lipford
+    location: Charlotte, NC
+    startdate: May 2020
+    enddate: August 2020
+    highlights:
+      - Designed and developed an Android mobile application with research intent.
+      - Implemented modern Android development practices with MVVM architecture and NoSQL databases.
+      - Participated in weekly meetings to discuss research objectives and create solutions to challenging obstacles.
+      - Developed experience in Android, Kotlin, Firebase, and Room.
+  - title: Undergraduate Capstone — Augmented Reality and Machine Learning for Medical Use
+    affiliation: UNC Charlotte, Autonomous Intelligent Wireless Networked Systems Laboratory — Dr. Pu Wang 
+    location: Charlotte, NC
+    startdate: December 2019
+    enddate: May 2020
+    highlights:
+      - Designed system for use in critical professions such as the medical industry.
+      - Utilized EPSON MOVERIO smart glasses in conjunction with Tensorflow Lite and other related technologies for user-inspired research in possible solutions for cognitive overload in error-critical professions.
+projects: 
+  - title: Campaign Website and IT Services Migration
+    affiliation: The Committee to Elect Ken McCool
+    location: Charlotte, NC
+    startdate: July 2021
+    enddate: August 2021
+    highlights:
+      - Volunteered to create new campaign website and migrate IT services to new provider.
+      - Implemented website using server-side static generation with headless CMS to enable reliable delivery on mobile devices for press releases and other campaign content.
+      - Managed roll-over to Google Workspace environment and handled enrollment in multi-factor authentication processes.
+      - 'Technologies used: Next.js, Vercel Hosting, Sanity CMS, Typescript, and Google Workspace.'
+organizations:
+  - title: Treasurer
+    affiliation: Philosophical Union of UNC Charlotte
+    location: Charlotte, NC
+    startdate: August 2022
+    enddate: null
+    highlights:
+      - Ensured graduate student organization members maintained financial aid eligibility for conference travel.
+      - Coordinates with university representatives and external vendors for annual graduate student conference.
+      - Create detailed plans for financial proceedings over term.
+  - title: Vice President
+    affiliation: Amnesty International at UNC Charlotte
+    location: Charlotte, NC
+    startdate: August 2021
+    enddate: December 2022
+    highlights:
+      - Organizing internal documents and keeping detailed records of organization activities.
+      - Coordinating between other officers with respect to needs and solutions.
+      - Create detailed meeting minutes for future reference.
+  - title: President
+    affiliation: Club for Artificial Intelligence Research
+    location: Charlotte, NC
+    startdate: September 2021
+    enddate: May 2022
+    highlights:
+      - Leading academic-oriented student organization with over 100 registered members.
+      - Re-imagining organization initiatives and goals.
+      - Integrating student organization with various academic organizations associated with UNC Charlotte.
+professional memberships:
+  - organization: Society for Phenomenology and Existential Philosophy
+    startdate: 2021
+    enddate: null
+  - organization: American Society for Engineering Education
+    startdate: 2020
+    enddate: null
+certifications:
+  - title: AWS Certified Cloud Practitioner
+    organization: Amazon Web Services
+    issued: September 2022
+  - title: 'Engineering: Responsible Conduct of Research'
+    organization: CITI Program
+    issued: March 2021
+  - title: 'Social and Behavioral Sciences: Responsible Conduct of Research'
+    organization: CITI Program
+    issued: March 2021
+  - title: IRB Committee Members — Basic Course
+    organization: CITI Program
+    issued: September 2020
+honors:
+  - title: Atkins Library Undergraduate Research Award
+    subtitle: Office of Undergraduate Research
+    organization: UNC Charlotte
+    date: 2020
+  - title: Student Marshal
+    subtitle: Selected based on academic performance
+    organization: UNC Charlotte
+    date: 2019
+
