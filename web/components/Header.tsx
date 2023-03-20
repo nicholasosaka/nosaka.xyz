@@ -15,11 +15,6 @@ const Header = () => {
                         <a className="link-animation">About</a>
                     </Link>
                 </li>
-                <li className="inline">
-                    <Link href="/resume">
-                        <a className="link-animation">Resume</a>
-                    </Link>
-                </li>
             </ul>
         </div>
         <hr className="mx-auto md:w-4/5 w-11/12 border-2 border-chestnut"></hr>
