@@ -12,7 +12,7 @@ const Home = (props: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-none lg:bg-[url('/svgs/blobs/blob-left.svg')] bg-bottom bg-no-repeat bg-cover lg:h-screen"> 
+      <main className=""> 
         <Header/>
         <div className="mt-8 md:mt-10 lg:mt-20 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
           <AllPosts posts={props.posts}/>
