@@ -19,7 +19,7 @@ const About = (props: any) => {
             <Header/>
             <div className="mt-8 xl:mt-20 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
                 <h1 className="text-2xl uppercase font-extrabold">About</h1>
-                <div className="flex flex-row sm:w-8/12 lg:w-6/12 justify-between">
+                <div className="xl:flex flex-row lg:w-6/12 justify-between my-3">
                     <IconLink svg="/svgs/email.svg" alt="Email Icon" text="nicholas@osaka.fyi" link="mailto:nicholas@osaka.fyi"/>
                     <IconLink svg="/svgs/github.svg" alt="GitHub Icon" text="nicholasosaka" link="https://github.com/nicholasosaka"/>
                     <IconLink svg="/svgs/linkedin.svg" alt="LinkedIn Icon" text="nicholasosaka" link="https://linkedin.com/in/nicholasosaka/"/>
@@ -34,7 +34,7 @@ const About = (props: any) => {
                 </div>
                 <h1 className="text-2xl font-bold text-chestnut">Looking for a CV/Resume?</h1>
                 <p className='prose'>You can find those here, as PDFs. I try to keep them as up-to-date as possible.</p>
-                <div className="flex md:flex-row flex-col justify-center gap-y-8 gap-x-16 my-8 w-5/6 md:w-9/12 lg:w-8/12">
+                <div className="flex md:flex-row flex-col gap-y-8 gap-x-16 my-8 w-5/6 md:w-9/12 lg:w-8/12">
                     <Link href="/cv.pdf" passHref>
                         <button className="transition duration-500 bg-transparent text-chestnut hover:bg-chestnut hover:text-white font-bold py-2 px-4 rounded inline-flex items-center border-2 border-chestnut">
                             <span className="">View my CV</span>
