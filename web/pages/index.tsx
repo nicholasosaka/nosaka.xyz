@@ -10,6 +10,7 @@ const Home = (props: any) => {
       <Head>
         <title>Nicholas Osaka</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Nicholas Osaka is a writer, worker in tech, and graduate student."/>
       </Head>
 
       <main className=""> 
