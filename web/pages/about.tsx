@@ -25,7 +25,7 @@ const About = (props: any) => {
                 <div className="">
                     <h1 className="text-2xl uppercase font-extrabold">About</h1>
                     <div className="xl:flex flex-row lg:w-7/12 justify-between my-3">
-                        <IconLink svg="/svgs/email.svg" alt="Email Icon" text="nicholas@osaka.fyi" link="mailto:nicholas@osaka.fyi"/>
+                        <IconLink svg="/svgs/email.svg" alt="Email Icon" text="nosaka@charlotte.edu" link="mailto:nosaka@charlotte.edu"/>
                         <IconLink svg="/svgs/github.svg" alt="GitHub Icon" text="nicholasosaka" link="https://github.com/nicholasosaka"/>
                         <IconLink svg="/svgs/linkedin.svg" alt="LinkedIn Icon" text="nicholasosaka" link="https://linkedin.com/in/nicholasosaka/"/>
                     </div>
