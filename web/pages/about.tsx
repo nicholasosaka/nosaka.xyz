@@ -37,19 +37,13 @@ const About = (props: any) => {
                             {...sanity.config()}
                         />
                     </div>
-                    <h1 className="text-2xl font-bold text-chestnut">Looking for a CV/Resume?</h1>
-                    <p className='prose'>You can find those here, as PDFs. I try to keep them as up-to-date as possible.</p>
+                    <h1 className="text-2xl font-bold text-chestnut">Academic CV</h1>
+                    <p className='prose'>You can find my academic CV here, as a PDF. I try to keep it as up-to-date as possible. For a look at my industry experience, please check out my LinkedIn.</p>
                     <div className="flex md:flex-row flex-col gap-y-8 gap-x-16 my-8 md:w-9/12 lg:w-11/12">
                         <Link href="/cv.pdf" passHref>
                             <button className="transition duration-500 bg-transparent text-chestnut hover:bg-chestnut hover:text-white font-bold py-2 px-4 rounded inline-flex items-center border-2 border-chestnut">
                                 <span className="mx-auto">View my CV</span>
                             </button>
-                        </Link>
-                        <Link href="/resume.pdf" passHref>
-                        <button className="transition duration-500 bg-transparent text-chestnut hover:bg-chestnut hover:text-white font-bold py-2 px-4 rounded inline-flex items-center border-2 border-chestnut">
-                                <span className="mx-auto">View my one page resume</span>
-                            </button>
-
                         </Link>
                     </div>
                 </div>
