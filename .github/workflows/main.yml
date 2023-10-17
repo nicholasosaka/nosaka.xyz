@@ -10,10 +10,12 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 
     - name: Merge main into dev
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git checkout dev
+        git checkout -B dev
         git merge main
         git push
