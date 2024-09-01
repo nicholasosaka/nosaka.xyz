@@ -1,8 +1,6 @@
 import Link from 'next/link'
-import sanity from '../lib/sanity'
-import Date from '../components/Date'
+import Date from './Date'
 import LinesEllipsis from 'react-lines-ellipsis'
-import BlockContent from '@sanity/block-content-to-react'
 
 const serializers = {
 

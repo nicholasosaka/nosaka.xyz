@@ -1,7 +1,6 @@
 import groq from 'groq'
 import Head from "next/head";
 import Header from '@components/Header'
-import sanity from '@lib/sanity'
 import PostLayout from '@components/PostLayout'
 import imageUrlBuilder from '@sanity/image-url'
 
