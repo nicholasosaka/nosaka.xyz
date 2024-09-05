@@ -1,19 +1,11 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Header from '@components/Header'
 import Head from 'next/head'
-import groq from 'groq'
-import sanity from '../lib/sanity'
-import BlockContent from '@sanity/block-content-to-react'
-import serializers from '@lib/serializers'
 import IconLink from '@components/IconLink'
 import Link from 'next/link'
 import Image from 'next/image'
-import imageUrlBuilder from '@sanity/image-url'
 
-
-const About = (props: any) => {
-    const builder = imageUrlBuilder(sanity)
-    const imageUrl = builder.image(props.me.image).url()
+const About = () => {
     return (
         <div className="">
             <Head>
@@ -31,18 +23,14 @@ const About = (props: any) => {
                             <IconLink svg="/svgs/github.svg" alt="GitHub Icon" text="nicholasosaka" link="https://github.com/nicholasosaka"/>
                             <IconLink svg="/svgs/linkedin.svg" alt="LinkedIn Icon" text="nicholasosaka" link="https://linkedin.com/in/nicholasosaka/"/>
                         </div>
-                        <div className="prose">
-                            <BlockContent
-                                blocks={props.me.bio}
-                                serializers={serializers}
-                                imageOptions={{ w: 320, h: 240, fit: 'max' }}
-                                {...sanity.config()}
-                            />
+                        <div className="prose my-5">
+                            <p>Nicholas Osaka is a writer, worker in tech, and graduate student studying philosophy at the University of North Carolina at Charlotte. They write about Asian/-American feminism, philosophy of technology (particularly artificial intelligence), and fintech. Their philosophical interests include the history of statistics and computing, cybernetics, diasporic feminist and queer theory, and critiques of neoliberalism. While their interests are always in motion, they find home in the frameworks offered through feminist, queer, and disabled philosophies and theories.</p>
+                            <p>Nicholas loves coffee, cats, and film photography.</p>
                         </div>
                         <h1 className="text-lg font-bold text-chestnut uppercase">// Academic CV</h1>
                         <p className='prose'>You can find my academic CV here, as a PDF. I try to keep it as up-to-date as possible. For a look at my industry experience, please check out my LinkedIn.</p>
                         <div className="flex md:flex-row flex-col gap-y-8 gap-x-16 my-8 w-full">
-                            <Link href="/cv.pdf" passHref>
+                            <Link href="/cv.pdf" passHref legacyBehavior>
                                 <button className="transition duration-500 bg-transparent text-chestnut hover:bg-chestnut hover:text-white font-bold py-2 px-28 rounded inline-flex items-center border-2 border-chestnut mx-auto">
                                     <span className="mx-auto">View my CV</span>
                                 </button>
@@ -61,19 +49,7 @@ const About = (props: any) => {
                 </div>
             </div>
         </div>
-    )
-}
-
-const query = groq`*[_type == "author" && slug.current == "nicholas-osaka"][0]`
-
-export async function getStaticProps() {
-  const me = await sanity.fetch(query)
-  return {
-    props: {
-      me: me
-    },
-    revalidate: 3600 //revalidate page contents upon request and at most every hour
-  } 
+    );
 }
 
 export default About
