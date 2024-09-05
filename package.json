@@ -9,17 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@sanity/block-content-to-react": "^3.0.0",
-    "@sanity/client": "^2.11.0",
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@next/mdx": "^14.2.7",
     "@sanity/image-url": "^0.140.22",
+    "@types/mdx": "^2.0.13",
     "@vercel/analytics": "^0.1.6",
+    "bright": "^0.8.5",
+    "gray-matter": "^4.0.3",
     "groq": "^2.2.6",
     "moment": "^2.29.1",
-    "next": "12.1.0",
+    "next": "^14.2.7",
+    "next-mdx-remote": "^5.0.0",
     "next-sanity": "^0.3.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-lines-ellipsis": "^0.15.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-lines-ellipsis": "^0.15.0",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-pretty-code": "^0.14.0",
+    "rehype-slug": "^6.0.0",
+    "remark-code-title": "^0.2.5",
+    "remark-gfm": "^4.0.0",
+    "remark-toc": "^9.0.0",
+    "shiki": "^1.16.2"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
@@ -33,6 +45,6 @@
     "eslint-config-next": "11.0.1",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.0.23",
-    "typescript": "4.3.5"
+    "typescript": "4.5.2"
   }
 }
