@@ -81,7 +81,7 @@ span[data-highlighted-line] {
   --tw-border-opacity: 1;
 }
 
-span[data-rehype-pretty-code-figure] {  
+/* span[data-rehype-pretty-code-figure] {  
     background-color: #1F2028;
     color: #c8d3f5;
-}
+} */
