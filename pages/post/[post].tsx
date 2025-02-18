@@ -9,9 +9,7 @@ import remarkGfm from 'remark-gfm'
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import { getImageProps } from 'next/image'
 
-// ${props.post.image}
 const Post = (props: any) => {
     return (
         <div>
@@ -22,12 +20,12 @@ const Post = (props: any) => {
 
             <Header/>
             {props.post.image && (
-                <div className="z-0 h-96 relative bg-cover bg-fixed" style={{
+                <div className="z-0 h-164 md:relative bg-contain md:bg-cover md:bg-fixed bg-bottom" style={{
                     backgroundImage: `url(${props.post.image})`,
                 }}/>
             )}
             <div className="absolute">
-                <div className="z-40 -mt-32 py-4 pb-16 px-4 sm:w-10/12 md:w-9/12 xl:w-6/12 mx-auto bg-white">
+                <div className="z-40 -mt-96 py-4 pb-16 px-4 sm:w-10/12 md:w-9/12 xl:w-6/12 mx-auto bg-white">
                     <h1 className="text-3xl md:text-4xl font-extrabold">{props.post.title}</h1>
                     <h3 className="md:text-xl font-light text-chestnut">{props.post.subtitle}</h3>
                     <div className="mt-1 font-light">
