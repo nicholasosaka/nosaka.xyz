@@ -31,7 +31,7 @@ const About = () => {
                         <p className='prose'>You can find my academic CV here, as a PDF. I try to keep it as up-to-date as possible. For a look at my industry experience, please check out my LinkedIn.</p>
                         <div className="flex md:flex-row flex-col gap-y-8 gap-x-16 my-8 w-full">
                             <Link href="/cv.pdf" passHref legacyBehavior>
-                                <button className="transition duration-500 bg-transparent text-chestnut hover:bg-chestnut hover:text-white font-bold py-2 px-28 rounded inline-flex items-center border-2 border-chestnut mx-auto">
+                                <button className="transition duration-500 bg-transparent text-chestnut hover:bg-chestnut hover:text-white font-bold py-2 px-28 rounded-sm inline-flex items-center border-2 border-chestnut mx-auto">
                                     <span className="mx-auto">View my CV</span>
                                 </button>
                             </Link>
