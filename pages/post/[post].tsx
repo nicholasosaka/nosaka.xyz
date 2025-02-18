@@ -9,7 +9,9 @@ import remarkGfm from 'remark-gfm'
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import { getImageProps } from 'next/image'
 
+// ${props.post.image}
 const Post = (props: any) => {
     return (
         <div>
@@ -19,29 +21,25 @@ const Post = (props: any) => {
             </Head>
 
             <Header/>
-            <div className="mt-8 xl:mt-10 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
-                <div className="sm:w-10/12 xl:w-9/12 mx-auto">
-                    {props.post.image && (
-                        <div className="mt-0 mb-8 w-6/7 mx-auto">
-                            <img
-                                src={props.post.image}
-                                alt={props.post.imagealt}
-                            />
-                        </div>
-                    )}
+            {props.post.image && (
+                <div className="z-0 h-96 relative bg-cover bg-fixed" style={{
+                    backgroundImage: `url(${props.post.image})`,
+                }}/>
+            )}
+            <div className="absolute">
+                <div className="z-40 -mt-32 py-4 pb-16 px-4 sm:w-10/12 md:w-9/12 xl:w-6/12 mx-auto bg-white">
                     <h1 className="text-3xl md:text-4xl font-extrabold">{props.post.title}</h1>
                     <h3 className="md:text-xl font-light text-chestnut">{props.post.subtitle}</h3>
                     <div className="mt-1 font-light">
                         <Date date={props.post.date}/>
                     </div>
-                    <article className="prose max-w-none py-10 font-cmu ">
+                    <article className="prose max-w-none py-10 font-cmu">
                         <MDXRemote
                             {...props.source}
                             components={useMDXComponents}
                         />
                     </article>
                 </div>
-
             </div>
         </div>
     )

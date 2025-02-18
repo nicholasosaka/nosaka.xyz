@@ -21,7 +21,7 @@ const Header = () => {
                 </li>
             </ul>
         </div>
-        <hr className="mx-auto md:w-4/5 w-11/12 border-2 border-chestnut"></hr>
+        <hr className="mx-auto  border-2 border-chestnut"></hr>
     </>;
   }
   

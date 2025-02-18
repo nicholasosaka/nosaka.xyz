@@ -5,7 +5,7 @@ import IconLink from '@components/IconLink'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const About = () => {
+const Index = () => {
     return (
         <div className="">
             <Head>
@@ -52,4 +52,4 @@ const About = () => {
     );
 }
 
-export default About
+export default Index
