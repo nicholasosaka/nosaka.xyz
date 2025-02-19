@@ -14,7 +14,7 @@ const Home = (props: any) => {
         <meta name="description" content="Nicholas Osaka is a writer, worker in tech, and graduate student."/>
       </Head>
       <main className=""> 
-        <Header/>
+        <Header fullhr/>
         <div className="mt-8 md:mt-10 lg:mt-20 mx-auto w-5/6 md:w-9/12 lg:w-8/12">
         <ul>
             {props.posts.map((post: any) => post.id && (

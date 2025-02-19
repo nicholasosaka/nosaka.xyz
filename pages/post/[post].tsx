@@ -20,12 +20,12 @@ const Post = (props: any) => {
 
             <Header/>
             {props.post.image && (
-                <div className="z-0 h-164 md:relative bg-contain md:bg-cover md:bg-fixed bg-bottom" style={{
+                <div className="z-0 h-164 md:relative bg-[auto_500px] sm:bg-cover sm:bg-fixed sm:bg-bottom" style={{
                     backgroundImage: `url(${props.post.image})`,
                 }}/>
             )}
             <div className="absolute">
-                <div className="z-40 -mt-96 py-4 pb-16 px-4 sm:w-10/12 md:w-9/12 xl:w-6/12 mx-auto bg-white">
+                <div className="z-40 -mt-96 py-4 pb-16 px-4 sm:w-10/12 lg:w-8/12 xl:w-6/12 mx-auto bg-white">
                     <h1 className="text-3xl md:text-4xl font-extrabold">{props.post.title}</h1>
                     <h3 className="md:text-xl font-light text-chestnut">{props.post.subtitle}</h3>
                     <div className="mt-1 font-light">

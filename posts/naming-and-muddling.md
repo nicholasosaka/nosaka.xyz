@@ -2,7 +2,7 @@
 title: 'Naming and Muddling: Messiness as Pedagogy'
 subtitle: 'This post was first published on the APA Blog and is reprinted here with permission.'
 date: '2023-07-05'
-image: '/imgs/naming-and-muddling-main.jpg'
+image: '/imgs/posts/naming-and-muddling-main.jpg'
 imagealt: 'A landscape photo of hills made of ice'
 ---
 In my first year of graduate studies I took a seminar called Feminist Methods taught by Elisabeth Paquette. This course was paradigm shifting for me as a new grad student. Of course, the content was and remains indispensable to me. At the same time, I quickly discovered that the way the course was operated was equally as valuable as the content of the course. In this post, I’ll be illustrating how naming and muddling were instrumentalized in the course. Our world is messy, and to embrace that means to clearly describe and critique it.
