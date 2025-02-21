@@ -30,7 +30,7 @@ const Index = () => {
                         <h1 className="text-lg font-bold text-chestnut uppercase">// curriculum vitae</h1>
                         <p className='prose'>You can find my academic CV here, as a PDF. I try to keep it as up-to-date as possible.</p>
                         <div className="flex md:flex-row flex-col gap-y-8 gap-x-16 my-8 w-full">
-                            <Link href="/cv.pdf" passHref legacyBehavior>
+                            <Link href="/cv" passHref legacyBehavior>
                                 <button className="transition duration-500 bg-transparent text-chestnut hover:bg-chestnut hover:text-white font-bold py-2 px-28 rounded-sm inline-flex items-center border-2 border-chestnut mx-auto cursor-pointer">
                                     <span className="mx-auto">View my CV</span>
                                 </button>
