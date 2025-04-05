@@ -10,16 +10,11 @@ jobs:
     if: github.event.pull_request.merged == false
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0 
-      - uses: actions/checkout@v4
-      - name: Approve Pull Request
-        run: gh pr review --approve ${{ github.event.pull_request.number }}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Merge Pull Request
-        run: gh pr merge --squash ${{ github.event.pull_request.number }}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Approve Pull Request
+      run: gh pr review --approve ${{ github.event.pull_request.number }}
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Merge Pull Request
+      run: gh pr merge --squash ${{ github.event.pull_request.number }}
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
