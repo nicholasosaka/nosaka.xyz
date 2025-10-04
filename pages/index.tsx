@@ -19,7 +19,7 @@ const Index = () => {
                     <div className='px-10 py-5 md:py-0 mx-auto mb-10 sm:mb-0'>
                         <h1 className="text-2xl uppercase font-extrabold text-chestnut">// about me</h1>
                         <div className="xl:flex flex-row lg:w-9/12 justify-between my-3">
-                            <IconLink svg="/svgs/email.svg" alt="Email Icon" text="nosaka@charlotte.edu" link="mailto:nosaka@charlotte.edu"/>
+                            <IconLink svg="/svgs/email.svg" alt="Email Icon" text="me@nosaka.xyz" link="mailto:nosaka@charlotte.edu"/>
                             <IconLink svg="/svgs/github.svg" alt="GitHub Icon" text="nicholasosaka" link="https://github.com/nicholasosaka"/>
                             <IconLink svg="/svgs/linkedin.svg" alt="LinkedIn Icon" text="nicholasosaka" link="https://linkedin.com/in/nicholasosaka/"/>
                         </div>
