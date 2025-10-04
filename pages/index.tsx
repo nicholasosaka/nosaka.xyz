@@ -36,6 +36,15 @@ const Index = () => {
                                 </button>
                             </Link>
                         </div>
+                        <h1 className="text-lg font-bold text-chestnut uppercase">// résumé</h1>
+                        <p className='prose'>Looking for my industry work? Find me on LinkedIn (above) or view my résumé here. Also a PDF.</p>
+                        <div className="flex md:flex-row flex-col gap-y-8 gap-x-16 my-8 w-full">
+                            <Link href="/resume" passHref legacyBehavior>
+                                <button className="transition duration-500 bg-transparent text-chestnut hover:bg-chestnut hover:text-white font-bold py-2 px-28 rounded-sm inline-flex items-center border-2 border-chestnut mx-auto cursor-pointer">
+                                    <span className="mx-auto">View my résumé</span>
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                     <div className='order-first sm:order-last mx-auto pb-5 px-10'>
                         <Image
