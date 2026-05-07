@@ -12,8 +12,8 @@ const Header = (props: { fullhr?: boolean }) => {
             </h1>
             <ul className="list-none mx-auto mr-0 uppercase font-bold text-xl lg:grid lg:grid-cols-2 mt-1 lg:mt-0">
                 <li className="inline mr-5 md:text-right">
-                    <Link href="/writing" className={linkStyle}>
-                        writing
+                    <Link href="https://notes.nosaka.xyz" className={linkStyle}>
+                        notebook
                     </Link>
                 </li>
                 <li className="inline text-right">
